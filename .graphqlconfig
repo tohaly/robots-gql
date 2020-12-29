@@ -1,0 +1,11 @@
+{
+  "schemaPath": "./schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "Default Introspection Endpoint": {
+        "url": "https://proxy-tohaly.herokuapp.com/v1/graphql",
+        "introspect": true
+      }
+    }
+  }
+}

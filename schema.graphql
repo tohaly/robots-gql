@@ -1,0 +1,7220 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: query_root
+    mutation: mutation_root
+    subscription: subscription_root
+}
+
+type LoginOutput {
+    accessToken: String!
+}
+
+type PasswordResetOutput {
+    userId: uuid!
+}
+
+type RefreshTokenOutput {
+    accessToken: String!
+}
+
+type RegisterOutput {
+    userId: uuid!
+}
+
+type ResultOutput {
+    result: String!
+}
+
+type SampleOutput {
+    accessToken: String!
+}
+
+"columns and relationships of \"candles120\""
+type candles120 {
+    asset: String!
+    close: numeric!
+    currency: String!
+    exchange: String!
+    high: numeric!
+    id: uuid!
+    low: numeric!
+    open: numeric!
+    time: bigint!
+    timestamp: timestamp!
+    type: String!
+    volume: numeric!
+}
+
+"aggregated selection of \"candles120\""
+type candles120_aggregate {
+    aggregate: candles120_aggregate_fields
+    nodes: [candles120!]!
+}
+
+"aggregate fields of \"candles120\""
+type candles120_aggregate_fields {
+    avg: candles120_avg_fields
+    count(columns: [candles120_select_column!], distinct: Boolean): Int
+    max: candles120_max_fields
+    min: candles120_min_fields
+    stddev: candles120_stddev_fields
+    stddev_pop: candles120_stddev_pop_fields
+    stddev_samp: candles120_stddev_samp_fields
+    sum: candles120_sum_fields
+    var_pop: candles120_var_pop_fields
+    var_samp: candles120_var_samp_fields
+    variance: candles120_variance_fields
+}
+
+"aggregate avg on columns"
+type candles120_avg_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate max on columns"
+type candles120_max_fields {
+    asset: String
+    close: numeric
+    currency: String
+    exchange: String
+    high: numeric
+    id: uuid
+    low: numeric
+    open: numeric
+    time: bigint
+    timestamp: timestamp
+    type: String
+    volume: numeric
+}
+
+"aggregate min on columns"
+type candles120_min_fields {
+    asset: String
+    close: numeric
+    currency: String
+    exchange: String
+    high: numeric
+    id: uuid
+    low: numeric
+    open: numeric
+    time: bigint
+    timestamp: timestamp
+    type: String
+    volume: numeric
+}
+
+"aggregate stddev on columns"
+type candles120_stddev_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate stddev_pop on columns"
+type candles120_stddev_pop_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate stddev_samp on columns"
+type candles120_stddev_samp_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate sum on columns"
+type candles120_sum_fields {
+    close: numeric
+    high: numeric
+    low: numeric
+    open: numeric
+    time: bigint
+    volume: numeric
+}
+
+"aggregate var_pop on columns"
+type candles120_var_pop_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate var_samp on columns"
+type candles120_var_samp_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate variance on columns"
+type candles120_variance_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"columns and relationships of \"candles1440\""
+type candles1440
+
+"aggregated selection of \"candles1440\""
+type candles1440_aggregate {
+    aggregate: candles1440_aggregate_fields
+    nodes: [candles1440!]!
+}
+
+"aggregate fields of \"candles1440\""
+type candles1440_aggregate_fields {
+    count(columns: [candles1440_select_column!], distinct: Boolean): Int
+}
+
+"columns and relationships of \"candles15\""
+type candles15 {
+    asset: String!
+    close: numeric!
+    currency: String!
+    exchange: String!
+    high: numeric!
+    id: uuid!
+    low: numeric!
+    open: numeric!
+    time: bigint!
+    timestamp: timestamp!
+    type: String!
+    volume: numeric!
+}
+
+"aggregated selection of \"candles15\""
+type candles15_aggregate {
+    aggregate: candles15_aggregate_fields
+    nodes: [candles15!]!
+}
+
+"aggregate fields of \"candles15\""
+type candles15_aggregate_fields {
+    avg: candles15_avg_fields
+    count(columns: [candles15_select_column!], distinct: Boolean): Int
+    max: candles15_max_fields
+    min: candles15_min_fields
+    stddev: candles15_stddev_fields
+    stddev_pop: candles15_stddev_pop_fields
+    stddev_samp: candles15_stddev_samp_fields
+    sum: candles15_sum_fields
+    var_pop: candles15_var_pop_fields
+    var_samp: candles15_var_samp_fields
+    variance: candles15_variance_fields
+}
+
+"aggregate avg on columns"
+type candles15_avg_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate max on columns"
+type candles15_max_fields {
+    asset: String
+    close: numeric
+    currency: String
+    exchange: String
+    high: numeric
+    id: uuid
+    low: numeric
+    open: numeric
+    time: bigint
+    timestamp: timestamp
+    type: String
+    volume: numeric
+}
+
+"aggregate min on columns"
+type candles15_min_fields {
+    asset: String
+    close: numeric
+    currency: String
+    exchange: String
+    high: numeric
+    id: uuid
+    low: numeric
+    open: numeric
+    time: bigint
+    timestamp: timestamp
+    type: String
+    volume: numeric
+}
+
+"aggregate stddev on columns"
+type candles15_stddev_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate stddev_pop on columns"
+type candles15_stddev_pop_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate stddev_samp on columns"
+type candles15_stddev_samp_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate sum on columns"
+type candles15_sum_fields {
+    close: numeric
+    high: numeric
+    low: numeric
+    open: numeric
+    time: bigint
+    volume: numeric
+}
+
+"aggregate var_pop on columns"
+type candles15_var_pop_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate var_samp on columns"
+type candles15_var_samp_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate variance on columns"
+type candles15_variance_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"columns and relationships of \"candles240\""
+type candles240 {
+    asset: String!
+    close: numeric!
+    currency: String!
+    exchange: String!
+    high: numeric!
+    id: uuid!
+    low: numeric!
+    open: numeric!
+    time: bigint!
+    timestamp: timestamp!
+    type: String!
+    volume: numeric!
+}
+
+"aggregated selection of \"candles240\""
+type candles240_aggregate {
+    aggregate: candles240_aggregate_fields
+    nodes: [candles240!]!
+}
+
+"aggregate fields of \"candles240\""
+type candles240_aggregate_fields {
+    avg: candles240_avg_fields
+    count(columns: [candles240_select_column!], distinct: Boolean): Int
+    max: candles240_max_fields
+    min: candles240_min_fields
+    stddev: candles240_stddev_fields
+    stddev_pop: candles240_stddev_pop_fields
+    stddev_samp: candles240_stddev_samp_fields
+    sum: candles240_sum_fields
+    var_pop: candles240_var_pop_fields
+    var_samp: candles240_var_samp_fields
+    variance: candles240_variance_fields
+}
+
+"aggregate avg on columns"
+type candles240_avg_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate max on columns"
+type candles240_max_fields {
+    asset: String
+    close: numeric
+    currency: String
+    exchange: String
+    high: numeric
+    id: uuid
+    low: numeric
+    open: numeric
+    time: bigint
+    timestamp: timestamp
+    type: String
+    volume: numeric
+}
+
+"aggregate min on columns"
+type candles240_min_fields {
+    asset: String
+    close: numeric
+    currency: String
+    exchange: String
+    high: numeric
+    id: uuid
+    low: numeric
+    open: numeric
+    time: bigint
+    timestamp: timestamp
+    type: String
+    volume: numeric
+}
+
+"aggregate stddev on columns"
+type candles240_stddev_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate stddev_pop on columns"
+type candles240_stddev_pop_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate stddev_samp on columns"
+type candles240_stddev_samp_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate sum on columns"
+type candles240_sum_fields {
+    close: numeric
+    high: numeric
+    low: numeric
+    open: numeric
+    time: bigint
+    volume: numeric
+}
+
+"aggregate var_pop on columns"
+type candles240_var_pop_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate var_samp on columns"
+type candles240_var_samp_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate variance on columns"
+type candles240_variance_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"columns and relationships of \"candles30\""
+type candles30 {
+    asset: String!
+    close: numeric!
+    currency: String!
+    exchange: String!
+    high: numeric!
+    id: uuid!
+    low: numeric!
+    open: numeric!
+    time: bigint!
+    timestamp: timestamp!
+    type: String!
+    volume: numeric!
+}
+
+"aggregated selection of \"candles30\""
+type candles30_aggregate {
+    aggregate: candles30_aggregate_fields
+    nodes: [candles30!]!
+}
+
+"aggregate fields of \"candles30\""
+type candles30_aggregate_fields {
+    avg: candles30_avg_fields
+    count(columns: [candles30_select_column!], distinct: Boolean): Int
+    max: candles30_max_fields
+    min: candles30_min_fields
+    stddev: candles30_stddev_fields
+    stddev_pop: candles30_stddev_pop_fields
+    stddev_samp: candles30_stddev_samp_fields
+    sum: candles30_sum_fields
+    var_pop: candles30_var_pop_fields
+    var_samp: candles30_var_samp_fields
+    variance: candles30_variance_fields
+}
+
+"aggregate avg on columns"
+type candles30_avg_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate max on columns"
+type candles30_max_fields {
+    asset: String
+    close: numeric
+    currency: String
+    exchange: String
+    high: numeric
+    id: uuid
+    low: numeric
+    open: numeric
+    time: bigint
+    timestamp: timestamp
+    type: String
+    volume: numeric
+}
+
+"aggregate min on columns"
+type candles30_min_fields {
+    asset: String
+    close: numeric
+    currency: String
+    exchange: String
+    high: numeric
+    id: uuid
+    low: numeric
+    open: numeric
+    time: bigint
+    timestamp: timestamp
+    type: String
+    volume: numeric
+}
+
+"aggregate stddev on columns"
+type candles30_stddev_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate stddev_pop on columns"
+type candles30_stddev_pop_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate stddev_samp on columns"
+type candles30_stddev_samp_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate sum on columns"
+type candles30_sum_fields {
+    close: numeric
+    high: numeric
+    low: numeric
+    open: numeric
+    time: bigint
+    volume: numeric
+}
+
+"aggregate var_pop on columns"
+type candles30_var_pop_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate var_samp on columns"
+type candles30_var_samp_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate variance on columns"
+type candles30_variance_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"columns and relationships of \"candles480\""
+type candles480 {
+    asset: String!
+    close: numeric!
+    currency: String!
+    exchange: String!
+    high: numeric!
+    id: uuid!
+    low: numeric!
+    open: numeric!
+    time: bigint!
+    timestamp: timestamp!
+    type: String!
+    volume: numeric!
+}
+
+"aggregated selection of \"candles480\""
+type candles480_aggregate {
+    aggregate: candles480_aggregate_fields
+    nodes: [candles480!]!
+}
+
+"aggregate fields of \"candles480\""
+type candles480_aggregate_fields {
+    avg: candles480_avg_fields
+    count(columns: [candles480_select_column!], distinct: Boolean): Int
+    max: candles480_max_fields
+    min: candles480_min_fields
+    stddev: candles480_stddev_fields
+    stddev_pop: candles480_stddev_pop_fields
+    stddev_samp: candles480_stddev_samp_fields
+    sum: candles480_sum_fields
+    var_pop: candles480_var_pop_fields
+    var_samp: candles480_var_samp_fields
+    variance: candles480_variance_fields
+}
+
+"aggregate avg on columns"
+type candles480_avg_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate max on columns"
+type candles480_max_fields {
+    asset: String
+    close: numeric
+    currency: String
+    exchange: String
+    high: numeric
+    id: uuid
+    low: numeric
+    open: numeric
+    time: bigint
+    timestamp: timestamp
+    type: String
+    volume: numeric
+}
+
+"aggregate min on columns"
+type candles480_min_fields {
+    asset: String
+    close: numeric
+    currency: String
+    exchange: String
+    high: numeric
+    id: uuid
+    low: numeric
+    open: numeric
+    time: bigint
+    timestamp: timestamp
+    type: String
+    volume: numeric
+}
+
+"aggregate stddev on columns"
+type candles480_stddev_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate stddev_pop on columns"
+type candles480_stddev_pop_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate stddev_samp on columns"
+type candles480_stddev_samp_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate sum on columns"
+type candles480_sum_fields {
+    close: numeric
+    high: numeric
+    low: numeric
+    open: numeric
+    time: bigint
+    volume: numeric
+}
+
+"aggregate var_pop on columns"
+type candles480_var_pop_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate var_samp on columns"
+type candles480_var_samp_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate variance on columns"
+type candles480_variance_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"columns and relationships of \"candles5\""
+type candles5 {
+    asset: String!
+    close: numeric!
+    currency: String!
+    exchange: String!
+    high: numeric!
+    id: uuid!
+    low: numeric!
+    open: numeric!
+    time: bigint!
+    timestamp: timestamp!
+    type: String!
+    volume: numeric!
+}
+
+"aggregated selection of \"candles5\""
+type candles5_aggregate {
+    aggregate: candles5_aggregate_fields
+    nodes: [candles5!]!
+}
+
+"aggregate fields of \"candles5\""
+type candles5_aggregate_fields {
+    avg: candles5_avg_fields
+    count(columns: [candles5_select_column!], distinct: Boolean): Int
+    max: candles5_max_fields
+    min: candles5_min_fields
+    stddev: candles5_stddev_fields
+    stddev_pop: candles5_stddev_pop_fields
+    stddev_samp: candles5_stddev_samp_fields
+    sum: candles5_sum_fields
+    var_pop: candles5_var_pop_fields
+    var_samp: candles5_var_samp_fields
+    variance: candles5_variance_fields
+}
+
+"aggregate avg on columns"
+type candles5_avg_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate max on columns"
+type candles5_max_fields {
+    asset: String
+    close: numeric
+    currency: String
+    exchange: String
+    high: numeric
+    id: uuid
+    low: numeric
+    open: numeric
+    time: bigint
+    timestamp: timestamp
+    type: String
+    volume: numeric
+}
+
+"aggregate min on columns"
+type candles5_min_fields {
+    asset: String
+    close: numeric
+    currency: String
+    exchange: String
+    high: numeric
+    id: uuid
+    low: numeric
+    open: numeric
+    time: bigint
+    timestamp: timestamp
+    type: String
+    volume: numeric
+}
+
+"aggregate stddev on columns"
+type candles5_stddev_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate stddev_pop on columns"
+type candles5_stddev_pop_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate stddev_samp on columns"
+type candles5_stddev_samp_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate sum on columns"
+type candles5_sum_fields {
+    close: numeric
+    high: numeric
+    low: numeric
+    open: numeric
+    time: bigint
+    volume: numeric
+}
+
+"aggregate var_pop on columns"
+type candles5_var_pop_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate var_samp on columns"
+type candles5_var_samp_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate variance on columns"
+type candles5_variance_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"columns and relationships of \"candles60\""
+type candles60 {
+    asset: String!
+    close: numeric!
+    currency: String!
+    exchange: String!
+    high: numeric!
+    id: uuid!
+    low: numeric!
+    open: numeric!
+    time: bigint!
+    timestamp: timestamp!
+    type: String!
+    volume: numeric!
+}
+
+"aggregated selection of \"candles60\""
+type candles60_aggregate {
+    aggregate: candles60_aggregate_fields
+    nodes: [candles60!]!
+}
+
+"aggregate fields of \"candles60\""
+type candles60_aggregate_fields {
+    avg: candles60_avg_fields
+    count(columns: [candles60_select_column!], distinct: Boolean): Int
+    max: candles60_max_fields
+    min: candles60_min_fields
+    stddev: candles60_stddev_fields
+    stddev_pop: candles60_stddev_pop_fields
+    stddev_samp: candles60_stddev_samp_fields
+    sum: candles60_sum_fields
+    var_pop: candles60_var_pop_fields
+    var_samp: candles60_var_samp_fields
+    variance: candles60_variance_fields
+}
+
+"aggregate avg on columns"
+type candles60_avg_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate max on columns"
+type candles60_max_fields {
+    asset: String
+    close: numeric
+    currency: String
+    exchange: String
+    high: numeric
+    id: uuid
+    low: numeric
+    open: numeric
+    time: bigint
+    timestamp: timestamp
+    type: String
+    volume: numeric
+}
+
+"aggregate min on columns"
+type candles60_min_fields {
+    asset: String
+    close: numeric
+    currency: String
+    exchange: String
+    high: numeric
+    id: uuid
+    low: numeric
+    open: numeric
+    time: bigint
+    timestamp: timestamp
+    type: String
+    volume: numeric
+}
+
+"aggregate stddev on columns"
+type candles60_stddev_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate stddev_pop on columns"
+type candles60_stddev_pop_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate stddev_samp on columns"
+type candles60_stddev_samp_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate sum on columns"
+type candles60_sum_fields {
+    close: numeric
+    high: numeric
+    low: numeric
+    open: numeric
+    time: bigint
+    volume: numeric
+}
+
+"aggregate var_pop on columns"
+type candles60_var_pop_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate var_samp on columns"
+type candles60_var_samp_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate variance on columns"
+type candles60_variance_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"columns and relationships of \"candles720\""
+type candles720 {
+    asset: String!
+    close: numeric!
+    currency: String!
+    exchange: String!
+    high: numeric!
+    id: uuid!
+    low: numeric!
+    open: numeric!
+    time: bigint!
+    timestamp: timestamp!
+    type: String!
+    volume: numeric!
+}
+
+"aggregated selection of \"candles720\""
+type candles720_aggregate {
+    aggregate: candles720_aggregate_fields
+    nodes: [candles720!]!
+}
+
+"aggregate fields of \"candles720\""
+type candles720_aggregate_fields {
+    avg: candles720_avg_fields
+    count(columns: [candles720_select_column!], distinct: Boolean): Int
+    max: candles720_max_fields
+    min: candles720_min_fields
+    stddev: candles720_stddev_fields
+    stddev_pop: candles720_stddev_pop_fields
+    stddev_samp: candles720_stddev_samp_fields
+    sum: candles720_sum_fields
+    var_pop: candles720_var_pop_fields
+    var_samp: candles720_var_samp_fields
+    variance: candles720_variance_fields
+}
+
+"aggregate avg on columns"
+type candles720_avg_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate max on columns"
+type candles720_max_fields {
+    asset: String
+    close: numeric
+    currency: String
+    exchange: String
+    high: numeric
+    id: uuid
+    low: numeric
+    open: numeric
+    time: bigint
+    timestamp: timestamp
+    type: String
+    volume: numeric
+}
+
+"aggregate min on columns"
+type candles720_min_fields {
+    asset: String
+    close: numeric
+    currency: String
+    exchange: String
+    high: numeric
+    id: uuid
+    low: numeric
+    open: numeric
+    time: bigint
+    timestamp: timestamp
+    type: String
+    volume: numeric
+}
+
+"aggregate stddev on columns"
+type candles720_stddev_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate stddev_pop on columns"
+type candles720_stddev_pop_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate stddev_samp on columns"
+type candles720_stddev_samp_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate sum on columns"
+type candles720_sum_fields {
+    close: numeric
+    high: numeric
+    low: numeric
+    open: numeric
+    time: bigint
+    volume: numeric
+}
+
+"aggregate var_pop on columns"
+type candles720_var_pop_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate var_samp on columns"
+type candles720_var_samp_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"aggregate variance on columns"
+type candles720_variance_fields {
+    close: Float
+    high: Float
+    low: Float
+    open: Float
+    time: Float
+    volume: Float
+}
+
+"mutation root"
+type mutation_root {
+    "perform the action: \"activateAccount\""
+    activateAccount(secretCode: String!, userId: uuid!): LoginOutput!
+    "perform the action: \"confirmPasswordReset\""
+    confirmPasswordReset(password: String!, secretCode: String!, userId: uuid!): LoginOutput!
+    "perform the action: \"login\""
+    login(email: String!, password: String!): LoginOutput!
+    "perform the action: \"loginTelegram\""
+    loginTelegram(data: TelegramInput!): LoginOutput!
+    "perform the action: \"logout\""
+    logout: ResultOutput!
+    "perform the action: \"passwordReset\""
+    passwordReset(email: String!): PasswordResetOutput!
+    "perform the action: \"refreshToken\""
+    refreshToken: RefreshTokenOutput!
+    "perform the action: \"register\""
+    register(email: String!, name: String, password: String!): RegisterOutput!
+}
+
+"query root"
+type query_root {
+    "fetch data from the table: \"candles120\""
+    candles120(
+        "distinct select on columns"
+        distinct_on: [candles120_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles120_order_by!],
+        "filter the rows returned"
+        where: candles120_bool_exp
+    ): [candles120!]!
+    "fetch aggregated fields from the table: \"candles120\""
+    candles120_aggregate(
+        "distinct select on columns"
+        distinct_on: [candles120_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles120_order_by!],
+        "filter the rows returned"
+        where: candles120_bool_exp
+    ): candles120_aggregate!
+    "fetch data from the table: \"candles120\" using primary key columns"
+    candles120_by_pk(id: uuid!): candles120
+    "fetch data from the table: \"candles1440\""
+    candles1440(
+        "distinct select on columns"
+        distinct_on: [candles1440_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles1440_order_by!],
+        "filter the rows returned"
+        where: candles1440_bool_exp
+    ): [candles1440!]!
+    "fetch aggregated fields from the table: \"candles1440\""
+    candles1440_aggregate(
+        "distinct select on columns"
+        distinct_on: [candles1440_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles1440_order_by!],
+        "filter the rows returned"
+        where: candles1440_bool_exp
+    ): candles1440_aggregate!
+    "fetch data from the table: \"candles1440\" using primary key columns"
+    candles1440_by_pk(id: uuid!): candles1440
+    "fetch data from the table: \"candles15\""
+    candles15(
+        "distinct select on columns"
+        distinct_on: [candles15_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles15_order_by!],
+        "filter the rows returned"
+        where: candles15_bool_exp
+    ): [candles15!]!
+    "fetch aggregated fields from the table: \"candles15\""
+    candles15_aggregate(
+        "distinct select on columns"
+        distinct_on: [candles15_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles15_order_by!],
+        "filter the rows returned"
+        where: candles15_bool_exp
+    ): candles15_aggregate!
+    "fetch data from the table: \"candles15\" using primary key columns"
+    candles15_by_pk(id: uuid!): candles15
+    "fetch data from the table: \"candles240\""
+    candles240(
+        "distinct select on columns"
+        distinct_on: [candles240_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles240_order_by!],
+        "filter the rows returned"
+        where: candles240_bool_exp
+    ): [candles240!]!
+    "fetch aggregated fields from the table: \"candles240\""
+    candles240_aggregate(
+        "distinct select on columns"
+        distinct_on: [candles240_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles240_order_by!],
+        "filter the rows returned"
+        where: candles240_bool_exp
+    ): candles240_aggregate!
+    "fetch data from the table: \"candles240\" using primary key columns"
+    candles240_by_pk(id: uuid!): candles240
+    "fetch data from the table: \"candles30\""
+    candles30(
+        "distinct select on columns"
+        distinct_on: [candles30_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles30_order_by!],
+        "filter the rows returned"
+        where: candles30_bool_exp
+    ): [candles30!]!
+    "fetch aggregated fields from the table: \"candles30\""
+    candles30_aggregate(
+        "distinct select on columns"
+        distinct_on: [candles30_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles30_order_by!],
+        "filter the rows returned"
+        where: candles30_bool_exp
+    ): candles30_aggregate!
+    "fetch data from the table: \"candles30\" using primary key columns"
+    candles30_by_pk(id: uuid!): candles30
+    "fetch data from the table: \"candles480\""
+    candles480(
+        "distinct select on columns"
+        distinct_on: [candles480_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles480_order_by!],
+        "filter the rows returned"
+        where: candles480_bool_exp
+    ): [candles480!]!
+    "fetch aggregated fields from the table: \"candles480\""
+    candles480_aggregate(
+        "distinct select on columns"
+        distinct_on: [candles480_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles480_order_by!],
+        "filter the rows returned"
+        where: candles480_bool_exp
+    ): candles480_aggregate!
+    "fetch data from the table: \"candles480\" using primary key columns"
+    candles480_by_pk(id: uuid!): candles480
+    "fetch data from the table: \"candles5\""
+    candles5(
+        "distinct select on columns"
+        distinct_on: [candles5_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles5_order_by!],
+        "filter the rows returned"
+        where: candles5_bool_exp
+    ): [candles5!]!
+    "fetch aggregated fields from the table: \"candles5\""
+    candles5_aggregate(
+        "distinct select on columns"
+        distinct_on: [candles5_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles5_order_by!],
+        "filter the rows returned"
+        where: candles5_bool_exp
+    ): candles5_aggregate!
+    "fetch data from the table: \"candles5\" using primary key columns"
+    candles5_by_pk(id: uuid!): candles5
+    "fetch data from the table: \"candles60\""
+    candles60(
+        "distinct select on columns"
+        distinct_on: [candles60_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles60_order_by!],
+        "filter the rows returned"
+        where: candles60_bool_exp
+    ): [candles60!]!
+    "fetch aggregated fields from the table: \"candles60\""
+    candles60_aggregate(
+        "distinct select on columns"
+        distinct_on: [candles60_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles60_order_by!],
+        "filter the rows returned"
+        where: candles60_bool_exp
+    ): candles60_aggregate!
+    "fetch data from the table: \"candles60\" using primary key columns"
+    candles60_by_pk(id: uuid!): candles60
+    "fetch data from the table: \"candles720\""
+    candles720(
+        "distinct select on columns"
+        distinct_on: [candles720_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles720_order_by!],
+        "filter the rows returned"
+        where: candles720_bool_exp
+    ): [candles720!]!
+    "fetch aggregated fields from the table: \"candles720\""
+    candles720_aggregate(
+        "distinct select on columns"
+        distinct_on: [candles720_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles720_order_by!],
+        "filter the rows returned"
+        where: candles720_bool_exp
+    ): candles720_aggregate!
+    "fetch data from the table: \"candles720\" using primary key columns"
+    candles720_by_pk(id: uuid!): candles720
+    "fetch data from the table: \"robot_stats\""
+    robot_stats(
+        "distinct select on columns"
+        distinct_on: [robot_stats_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [robot_stats_order_by!],
+        "filter the rows returned"
+        where: robot_stats_bool_exp
+    ): [robot_stats!]!
+    "fetch data from the table: \"robot_stats\" using primary key columns"
+    robot_stats_by_pk(robot_id: uuid!): robot_stats
+    "fetch data from the table: \"robots\""
+    robots(
+        "distinct select on columns"
+        distinct_on: [robots_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [robots_order_by!],
+        "filter the rows returned"
+        where: robots_bool_exp
+    ): [robots!]!
+    "fetch aggregated fields from the table: \"robots\""
+    robots_aggregate(
+        "distinct select on columns"
+        distinct_on: [robots_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [robots_order_by!],
+        "filter the rows returned"
+        where: robots_bool_exp
+    ): robots_aggregate!
+    "fetch data from the table: \"robots\" using primary key columns"
+    robots_by_pk(id: uuid!): robots
+    "fetch data from the table: \"strategies\""
+    strategies(
+        "distinct select on columns"
+        distinct_on: [strategies_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [strategies_order_by!],
+        "filter the rows returned"
+        where: strategies_bool_exp
+    ): [strategies!]!
+    "fetch data from the table: \"strategies\" using primary key columns"
+    strategies_by_pk(id: String!): strategies
+    "fetch data from the table: \"v_candles120_positions\""
+    v_candles120_positions(
+        "distinct select on columns"
+        distinct_on: [v_candles120_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles120_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles120_positions_bool_exp
+    ): [v_candles120_positions!]!
+    "fetch aggregated fields from the table: \"v_candles120_positions\""
+    v_candles120_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_candles120_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles120_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles120_positions_bool_exp
+    ): v_candles120_positions_aggregate!
+    "fetch data from the table: \"v_candles1440_positions\""
+    v_candles1440_positions(
+        "distinct select on columns"
+        distinct_on: [v_candles1440_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles1440_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles1440_positions_bool_exp
+    ): [v_candles1440_positions!]!
+    "fetch aggregated fields from the table: \"v_candles1440_positions\""
+    v_candles1440_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_candles1440_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles1440_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles1440_positions_bool_exp
+    ): v_candles1440_positions_aggregate!
+    "fetch data from the table: \"v_candles15_positions\""
+    v_candles15_positions(
+        "distinct select on columns"
+        distinct_on: [v_candles15_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles15_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles15_positions_bool_exp
+    ): [v_candles15_positions!]!
+    "fetch aggregated fields from the table: \"v_candles15_positions\""
+    v_candles15_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_candles15_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles15_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles15_positions_bool_exp
+    ): v_candles15_positions_aggregate!
+    "fetch data from the table: \"v_candles240_positions\""
+    v_candles240_positions(
+        "distinct select on columns"
+        distinct_on: [v_candles240_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles240_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles240_positions_bool_exp
+    ): [v_candles240_positions!]!
+    "fetch aggregated fields from the table: \"v_candles240_positions\""
+    v_candles240_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_candles240_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles240_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles240_positions_bool_exp
+    ): v_candles240_positions_aggregate!
+    "fetch data from the table: \"v_candles30_positions\""
+    v_candles30_positions(
+        "distinct select on columns"
+        distinct_on: [v_candles30_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles30_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles30_positions_bool_exp
+    ): [v_candles30_positions!]!
+    "fetch aggregated fields from the table: \"v_candles30_positions\""
+    v_candles30_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_candles30_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles30_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles30_positions_bool_exp
+    ): v_candles30_positions_aggregate!
+    "fetch data from the table: \"v_candles480_positions\""
+    v_candles480_positions(
+        "distinct select on columns"
+        distinct_on: [v_candles480_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles480_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles480_positions_bool_exp
+    ): [v_candles480_positions!]!
+    "fetch aggregated fields from the table: \"v_candles480_positions\""
+    v_candles480_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_candles480_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles480_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles480_positions_bool_exp
+    ): v_candles480_positions_aggregate!
+    "fetch data from the table: \"v_candles5_positions\""
+    v_candles5_positions(
+        "distinct select on columns"
+        distinct_on: [v_candles5_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles5_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles5_positions_bool_exp
+    ): [v_candles5_positions!]!
+    "fetch aggregated fields from the table: \"v_candles5_positions\""
+    v_candles5_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_candles5_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles5_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles5_positions_bool_exp
+    ): v_candles5_positions_aggregate!
+    "fetch data from the table: \"v_candles60_positions\""
+    v_candles60_positions(
+        "distinct select on columns"
+        distinct_on: [v_candles60_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles60_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles60_positions_bool_exp
+    ): [v_candles60_positions!]!
+    "fetch aggregated fields from the table: \"v_candles60_positions\""
+    v_candles60_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_candles60_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles60_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles60_positions_bool_exp
+    ): v_candles60_positions_aggregate!
+    "fetch data from the table: \"v_candles720_positions\""
+    v_candles720_positions(
+        "distinct select on columns"
+        distinct_on: [v_candles720_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles720_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles720_positions_bool_exp
+    ): [v_candles720_positions!]!
+    "fetch aggregated fields from the table: \"v_candles720_positions\""
+    v_candles720_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_candles720_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles720_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles720_positions_bool_exp
+    ): v_candles720_positions_aggregate!
+    "fetch data from the table: \"v_robot_alerts\""
+    v_robot_alerts(
+        "distinct select on columns"
+        distinct_on: [v_robot_alerts_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_robot_alerts_order_by!],
+        "filter the rows returned"
+        where: v_robot_alerts_bool_exp
+    ): [v_robot_alerts!]!
+    "fetch aggregated fields from the table: \"v_robot_alerts\""
+    v_robot_alerts_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_robot_alerts_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_robot_alerts_order_by!],
+        "filter the rows returned"
+        where: v_robot_alerts_bool_exp
+    ): v_robot_alerts_aggregate!
+    "fetch data from the table: \"v_robot_positions\""
+    v_robot_positions(
+        "distinct select on columns"
+        distinct_on: [v_robot_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_robot_positions_order_by!],
+        "filter the rows returned"
+        where: v_robot_positions_bool_exp
+    ): [v_robot_positions!]!
+    "fetch aggregated fields from the table: \"v_robot_positions\""
+    v_robot_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_robot_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_robot_positions_order_by!],
+        "filter the rows returned"
+        where: v_robot_positions_bool_exp
+    ): v_robot_positions_aggregate!
+    "fetch data from the table: \"v_robot_settings\""
+    v_robot_settings(
+        "distinct select on columns"
+        distinct_on: [v_robot_settings_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_robot_settings_order_by!],
+        "filter the rows returned"
+        where: v_robot_settings_bool_exp
+    ): [v_robot_settings!]!
+    "fetch data from the table: \"v_robot_stats\""
+    v_robot_stats(
+        "distinct select on columns"
+        distinct_on: [v_robot_stats_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_robot_stats_order_by!],
+        "filter the rows returned"
+        where: v_robot_stats_bool_exp
+    ): [v_robot_stats!]!
+}
+
+"columns and relationships of \"robot_stats\""
+type robot_stats {
+    equity(
+        "JSON select path"
+        path: String
+    ): jsonb!
+    equity_avg(
+        "JSON select path"
+        path: String
+    ): jsonb!
+    last_position_exit_date: timestamp!
+    last_updated_at: timestamp!
+    "An object relationship"
+    robot: robots!
+    robot_id: uuid!
+    statistics(
+        "JSON select path"
+        path: String
+    ): jsonb!
+}
+
+"columns and relationships of \"robots\""
+type robots {
+    "An array relationship"
+    active_signals(
+        "distinct select on columns"
+        distinct_on: [v_robot_alerts_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_robot_alerts_order_by!],
+        "filter the rows returned"
+        where: v_robot_alerts_bool_exp
+    ): [v_robot_alerts!]!
+    "An aggregated array relationship"
+    active_signals_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_robot_alerts_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_robot_alerts_order_by!],
+        "filter the rows returned"
+        where: v_robot_alerts_bool_exp
+    ): v_robot_alerts_aggregate!
+    asset: String!
+    available: Int!
+    code: String!
+    currency: String!
+    exchange: String!
+    id: uuid!
+    mod: String!
+    name: String
+    "An array relationship"
+    robot_positions(
+        "distinct select on columns"
+        distinct_on: [v_robot_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_robot_positions_order_by!],
+        "filter the rows returned"
+        where: v_robot_positions_bool_exp
+    ): [v_robot_positions!]!
+    "An aggregated array relationship"
+    robot_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_robot_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_robot_positions_order_by!],
+        "filter the rows returned"
+        where: v_robot_positions_bool_exp
+    ): v_robot_positions_aggregate!
+    "An object relationship"
+    robot_settings: v_robot_settings
+    signals: Boolean!
+    started_at: timestamp
+    "An object relationship"
+    stats: v_robot_stats
+    status: String!
+    stopped_at: timestamp
+    "An object relationship"
+    strategyByStrategy: strategies!
+    timeframe: Int!
+    trading: Boolean!
+}
+
+"aggregated selection of \"robots\""
+type robots_aggregate {
+    aggregate: robots_aggregate_fields
+    nodes: [robots!]!
+}
+
+"aggregate fields of \"robots\""
+type robots_aggregate_fields {
+    avg: robots_avg_fields
+    count(columns: [robots_select_column!], distinct: Boolean): Int
+    max: robots_max_fields
+    min: robots_min_fields
+    stddev: robots_stddev_fields
+    stddev_pop: robots_stddev_pop_fields
+    stddev_samp: robots_stddev_samp_fields
+    sum: robots_sum_fields
+    var_pop: robots_var_pop_fields
+    var_samp: robots_var_samp_fields
+    variance: robots_variance_fields
+}
+
+"aggregate avg on columns"
+type robots_avg_fields {
+    available: Float
+    timeframe: Float
+}
+
+"aggregate max on columns"
+type robots_max_fields {
+    asset: String
+    available: Int
+    code: String
+    currency: String
+    exchange: String
+    id: uuid
+    mod: String
+    name: String
+    started_at: timestamp
+    status: String
+    stopped_at: timestamp
+    timeframe: Int
+}
+
+"aggregate min on columns"
+type robots_min_fields {
+    asset: String
+    available: Int
+    code: String
+    currency: String
+    exchange: String
+    id: uuid
+    mod: String
+    name: String
+    started_at: timestamp
+    status: String
+    stopped_at: timestamp
+    timeframe: Int
+}
+
+"aggregate stddev on columns"
+type robots_stddev_fields {
+    available: Float
+    timeframe: Float
+}
+
+"aggregate stddev_pop on columns"
+type robots_stddev_pop_fields {
+    available: Float
+    timeframe: Float
+}
+
+"aggregate stddev_samp on columns"
+type robots_stddev_samp_fields {
+    available: Float
+    timeframe: Float
+}
+
+"aggregate sum on columns"
+type robots_sum_fields {
+    available: Int
+    timeframe: Int
+}
+
+"aggregate var_pop on columns"
+type robots_var_pop_fields {
+    available: Float
+    timeframe: Float
+}
+
+"aggregate var_samp on columns"
+type robots_var_samp_fields {
+    available: Float
+    timeframe: Float
+}
+
+"aggregate variance on columns"
+type robots_variance_fields {
+    available: Float
+    timeframe: Float
+}
+
+"columns and relationships of \"strategies\""
+type strategies {
+    description: String
+    id: String!
+    name: String!
+    "An array relationship"
+    robots(
+        "distinct select on columns"
+        distinct_on: [robots_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [robots_order_by!],
+        "filter the rows returned"
+        where: robots_bool_exp
+    ): [robots!]!
+    "An aggregated array relationship"
+    robots_aggregate(
+        "distinct select on columns"
+        distinct_on: [robots_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [robots_order_by!],
+        "filter the rows returned"
+        where: robots_bool_exp
+    ): robots_aggregate!
+}
+
+"subscription root"
+type subscription_root {
+    "fetch data from the table: \"candles120\""
+    candles120(
+        "distinct select on columns"
+        distinct_on: [candles120_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles120_order_by!],
+        "filter the rows returned"
+        where: candles120_bool_exp
+    ): [candles120!]!
+    "fetch aggregated fields from the table: \"candles120\""
+    candles120_aggregate(
+        "distinct select on columns"
+        distinct_on: [candles120_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles120_order_by!],
+        "filter the rows returned"
+        where: candles120_bool_exp
+    ): candles120_aggregate!
+    "fetch data from the table: \"candles120\" using primary key columns"
+    candles120_by_pk(id: uuid!): candles120
+    "fetch data from the table: \"candles1440\""
+    candles1440(
+        "distinct select on columns"
+        distinct_on: [candles1440_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles1440_order_by!],
+        "filter the rows returned"
+        where: candles1440_bool_exp
+    ): [candles1440!]!
+    "fetch aggregated fields from the table: \"candles1440\""
+    candles1440_aggregate(
+        "distinct select on columns"
+        distinct_on: [candles1440_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles1440_order_by!],
+        "filter the rows returned"
+        where: candles1440_bool_exp
+    ): candles1440_aggregate!
+    "fetch data from the table: \"candles1440\" using primary key columns"
+    candles1440_by_pk(id: uuid!): candles1440
+    "fetch data from the table: \"candles15\""
+    candles15(
+        "distinct select on columns"
+        distinct_on: [candles15_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles15_order_by!],
+        "filter the rows returned"
+        where: candles15_bool_exp
+    ): [candles15!]!
+    "fetch aggregated fields from the table: \"candles15\""
+    candles15_aggregate(
+        "distinct select on columns"
+        distinct_on: [candles15_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles15_order_by!],
+        "filter the rows returned"
+        where: candles15_bool_exp
+    ): candles15_aggregate!
+    "fetch data from the table: \"candles15\" using primary key columns"
+    candles15_by_pk(id: uuid!): candles15
+    "fetch data from the table: \"candles240\""
+    candles240(
+        "distinct select on columns"
+        distinct_on: [candles240_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles240_order_by!],
+        "filter the rows returned"
+        where: candles240_bool_exp
+    ): [candles240!]!
+    "fetch aggregated fields from the table: \"candles240\""
+    candles240_aggregate(
+        "distinct select on columns"
+        distinct_on: [candles240_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles240_order_by!],
+        "filter the rows returned"
+        where: candles240_bool_exp
+    ): candles240_aggregate!
+    "fetch data from the table: \"candles240\" using primary key columns"
+    candles240_by_pk(id: uuid!): candles240
+    "fetch data from the table: \"candles30\""
+    candles30(
+        "distinct select on columns"
+        distinct_on: [candles30_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles30_order_by!],
+        "filter the rows returned"
+        where: candles30_bool_exp
+    ): [candles30!]!
+    "fetch aggregated fields from the table: \"candles30\""
+    candles30_aggregate(
+        "distinct select on columns"
+        distinct_on: [candles30_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles30_order_by!],
+        "filter the rows returned"
+        where: candles30_bool_exp
+    ): candles30_aggregate!
+    "fetch data from the table: \"candles30\" using primary key columns"
+    candles30_by_pk(id: uuid!): candles30
+    "fetch data from the table: \"candles480\""
+    candles480(
+        "distinct select on columns"
+        distinct_on: [candles480_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles480_order_by!],
+        "filter the rows returned"
+        where: candles480_bool_exp
+    ): [candles480!]!
+    "fetch aggregated fields from the table: \"candles480\""
+    candles480_aggregate(
+        "distinct select on columns"
+        distinct_on: [candles480_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles480_order_by!],
+        "filter the rows returned"
+        where: candles480_bool_exp
+    ): candles480_aggregate!
+    "fetch data from the table: \"candles480\" using primary key columns"
+    candles480_by_pk(id: uuid!): candles480
+    "fetch data from the table: \"candles5\""
+    candles5(
+        "distinct select on columns"
+        distinct_on: [candles5_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles5_order_by!],
+        "filter the rows returned"
+        where: candles5_bool_exp
+    ): [candles5!]!
+    "fetch aggregated fields from the table: \"candles5\""
+    candles5_aggregate(
+        "distinct select on columns"
+        distinct_on: [candles5_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles5_order_by!],
+        "filter the rows returned"
+        where: candles5_bool_exp
+    ): candles5_aggregate!
+    "fetch data from the table: \"candles5\" using primary key columns"
+    candles5_by_pk(id: uuid!): candles5
+    "fetch data from the table: \"candles60\""
+    candles60(
+        "distinct select on columns"
+        distinct_on: [candles60_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles60_order_by!],
+        "filter the rows returned"
+        where: candles60_bool_exp
+    ): [candles60!]!
+    "fetch aggregated fields from the table: \"candles60\""
+    candles60_aggregate(
+        "distinct select on columns"
+        distinct_on: [candles60_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles60_order_by!],
+        "filter the rows returned"
+        where: candles60_bool_exp
+    ): candles60_aggregate!
+    "fetch data from the table: \"candles60\" using primary key columns"
+    candles60_by_pk(id: uuid!): candles60
+    "fetch data from the table: \"candles720\""
+    candles720(
+        "distinct select on columns"
+        distinct_on: [candles720_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles720_order_by!],
+        "filter the rows returned"
+        where: candles720_bool_exp
+    ): [candles720!]!
+    "fetch aggregated fields from the table: \"candles720\""
+    candles720_aggregate(
+        "distinct select on columns"
+        distinct_on: [candles720_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [candles720_order_by!],
+        "filter the rows returned"
+        where: candles720_bool_exp
+    ): candles720_aggregate!
+    "fetch data from the table: \"candles720\" using primary key columns"
+    candles720_by_pk(id: uuid!): candles720
+    "fetch data from the table: \"robot_stats\""
+    robot_stats(
+        "distinct select on columns"
+        distinct_on: [robot_stats_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [robot_stats_order_by!],
+        "filter the rows returned"
+        where: robot_stats_bool_exp
+    ): [robot_stats!]!
+    "fetch data from the table: \"robot_stats\" using primary key columns"
+    robot_stats_by_pk(robot_id: uuid!): robot_stats
+    "fetch data from the table: \"robots\""
+    robots(
+        "distinct select on columns"
+        distinct_on: [robots_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [robots_order_by!],
+        "filter the rows returned"
+        where: robots_bool_exp
+    ): [robots!]!
+    "fetch aggregated fields from the table: \"robots\""
+    robots_aggregate(
+        "distinct select on columns"
+        distinct_on: [robots_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [robots_order_by!],
+        "filter the rows returned"
+        where: robots_bool_exp
+    ): robots_aggregate!
+    "fetch data from the table: \"robots\" using primary key columns"
+    robots_by_pk(id: uuid!): robots
+    "fetch data from the table: \"strategies\""
+    strategies(
+        "distinct select on columns"
+        distinct_on: [strategies_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [strategies_order_by!],
+        "filter the rows returned"
+        where: strategies_bool_exp
+    ): [strategies!]!
+    "fetch data from the table: \"strategies\" using primary key columns"
+    strategies_by_pk(id: String!): strategies
+    "fetch data from the table: \"v_candles120_positions\""
+    v_candles120_positions(
+        "distinct select on columns"
+        distinct_on: [v_candles120_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles120_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles120_positions_bool_exp
+    ): [v_candles120_positions!]!
+    "fetch aggregated fields from the table: \"v_candles120_positions\""
+    v_candles120_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_candles120_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles120_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles120_positions_bool_exp
+    ): v_candles120_positions_aggregate!
+    "fetch data from the table: \"v_candles1440_positions\""
+    v_candles1440_positions(
+        "distinct select on columns"
+        distinct_on: [v_candles1440_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles1440_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles1440_positions_bool_exp
+    ): [v_candles1440_positions!]!
+    "fetch aggregated fields from the table: \"v_candles1440_positions\""
+    v_candles1440_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_candles1440_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles1440_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles1440_positions_bool_exp
+    ): v_candles1440_positions_aggregate!
+    "fetch data from the table: \"v_candles15_positions\""
+    v_candles15_positions(
+        "distinct select on columns"
+        distinct_on: [v_candles15_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles15_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles15_positions_bool_exp
+    ): [v_candles15_positions!]!
+    "fetch aggregated fields from the table: \"v_candles15_positions\""
+    v_candles15_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_candles15_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles15_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles15_positions_bool_exp
+    ): v_candles15_positions_aggregate!
+    "fetch data from the table: \"v_candles240_positions\""
+    v_candles240_positions(
+        "distinct select on columns"
+        distinct_on: [v_candles240_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles240_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles240_positions_bool_exp
+    ): [v_candles240_positions!]!
+    "fetch aggregated fields from the table: \"v_candles240_positions\""
+    v_candles240_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_candles240_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles240_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles240_positions_bool_exp
+    ): v_candles240_positions_aggregate!
+    "fetch data from the table: \"v_candles30_positions\""
+    v_candles30_positions(
+        "distinct select on columns"
+        distinct_on: [v_candles30_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles30_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles30_positions_bool_exp
+    ): [v_candles30_positions!]!
+    "fetch aggregated fields from the table: \"v_candles30_positions\""
+    v_candles30_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_candles30_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles30_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles30_positions_bool_exp
+    ): v_candles30_positions_aggregate!
+    "fetch data from the table: \"v_candles480_positions\""
+    v_candles480_positions(
+        "distinct select on columns"
+        distinct_on: [v_candles480_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles480_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles480_positions_bool_exp
+    ): [v_candles480_positions!]!
+    "fetch aggregated fields from the table: \"v_candles480_positions\""
+    v_candles480_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_candles480_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles480_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles480_positions_bool_exp
+    ): v_candles480_positions_aggregate!
+    "fetch data from the table: \"v_candles5_positions\""
+    v_candles5_positions(
+        "distinct select on columns"
+        distinct_on: [v_candles5_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles5_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles5_positions_bool_exp
+    ): [v_candles5_positions!]!
+    "fetch aggregated fields from the table: \"v_candles5_positions\""
+    v_candles5_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_candles5_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles5_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles5_positions_bool_exp
+    ): v_candles5_positions_aggregate!
+    "fetch data from the table: \"v_candles60_positions\""
+    v_candles60_positions(
+        "distinct select on columns"
+        distinct_on: [v_candles60_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles60_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles60_positions_bool_exp
+    ): [v_candles60_positions!]!
+    "fetch aggregated fields from the table: \"v_candles60_positions\""
+    v_candles60_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_candles60_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles60_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles60_positions_bool_exp
+    ): v_candles60_positions_aggregate!
+    "fetch data from the table: \"v_candles720_positions\""
+    v_candles720_positions(
+        "distinct select on columns"
+        distinct_on: [v_candles720_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles720_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles720_positions_bool_exp
+    ): [v_candles720_positions!]!
+    "fetch aggregated fields from the table: \"v_candles720_positions\""
+    v_candles720_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_candles720_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_candles720_positions_order_by!],
+        "filter the rows returned"
+        where: v_candles720_positions_bool_exp
+    ): v_candles720_positions_aggregate!
+    "fetch data from the table: \"v_robot_alerts\""
+    v_robot_alerts(
+        "distinct select on columns"
+        distinct_on: [v_robot_alerts_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_robot_alerts_order_by!],
+        "filter the rows returned"
+        where: v_robot_alerts_bool_exp
+    ): [v_robot_alerts!]!
+    "fetch aggregated fields from the table: \"v_robot_alerts\""
+    v_robot_alerts_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_robot_alerts_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_robot_alerts_order_by!],
+        "filter the rows returned"
+        where: v_robot_alerts_bool_exp
+    ): v_robot_alerts_aggregate!
+    "fetch data from the table: \"v_robot_positions\""
+    v_robot_positions(
+        "distinct select on columns"
+        distinct_on: [v_robot_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_robot_positions_order_by!],
+        "filter the rows returned"
+        where: v_robot_positions_bool_exp
+    ): [v_robot_positions!]!
+    "fetch aggregated fields from the table: \"v_robot_positions\""
+    v_robot_positions_aggregate(
+        "distinct select on columns"
+        distinct_on: [v_robot_positions_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_robot_positions_order_by!],
+        "filter the rows returned"
+        where: v_robot_positions_bool_exp
+    ): v_robot_positions_aggregate!
+    "fetch data from the table: \"v_robot_settings\""
+    v_robot_settings(
+        "distinct select on columns"
+        distinct_on: [v_robot_settings_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_robot_settings_order_by!],
+        "filter the rows returned"
+        where: v_robot_settings_bool_exp
+    ): [v_robot_settings!]!
+    "fetch data from the table: \"v_robot_stats\""
+    v_robot_stats(
+        "distinct select on columns"
+        distinct_on: [v_robot_stats_select_column!],
+        "limit the number of rows returned"
+        limit: Int,
+        "skip the first n rows. Use only with order_by"
+        offset: Int,
+        "sort the rows by one or more columns"
+        order_by: [v_robot_stats_order_by!],
+        "filter the rows returned"
+        where: v_robot_stats_bool_exp
+    ): [v_robot_stats!]!
+}
+
+"columns and relationships of \"v_candles120_positions\""
+type v_candles120_positions {
+    "An object relationship"
+    candle: candles120
+    candle_id: uuid
+    position_entry(
+        "JSON select path"
+        path: String
+    ): json
+    position_exit(
+        "JSON select path"
+        path: String
+    ): json
+    "An object relationship"
+    robot: robots
+    robot_id: uuid
+}
+
+"aggregated selection of \"v_candles120_positions\""
+type v_candles120_positions_aggregate {
+    aggregate: v_candles120_positions_aggregate_fields
+    nodes: [v_candles120_positions!]!
+}
+
+"aggregate fields of \"v_candles120_positions\""
+type v_candles120_positions_aggregate_fields {
+    count(columns: [v_candles120_positions_select_column!], distinct: Boolean): Int
+    max: v_candles120_positions_max_fields
+    min: v_candles120_positions_min_fields
+}
+
+"aggregate max on columns"
+type v_candles120_positions_max_fields {
+    candle_id: uuid
+    robot_id: uuid
+}
+
+"aggregate min on columns"
+type v_candles120_positions_min_fields {
+    candle_id: uuid
+    robot_id: uuid
+}
+
+"columns and relationships of \"v_candles1440_positions\""
+type v_candles1440_positions {
+    "An object relationship"
+    candle: candles1440
+    candle_id: uuid
+    position_entry(
+        "JSON select path"
+        path: String
+    ): json
+    position_exit(
+        "JSON select path"
+        path: String
+    ): json
+    "An object relationship"
+    robot: robots
+    robot_id: uuid
+}
+
+"aggregated selection of \"v_candles1440_positions\""
+type v_candles1440_positions_aggregate {
+    aggregate: v_candles1440_positions_aggregate_fields
+    nodes: [v_candles1440_positions!]!
+}
+
+"aggregate fields of \"v_candles1440_positions\""
+type v_candles1440_positions_aggregate_fields {
+    count(columns: [v_candles1440_positions_select_column!], distinct: Boolean): Int
+    max: v_candles1440_positions_max_fields
+    min: v_candles1440_positions_min_fields
+}
+
+"aggregate max on columns"
+type v_candles1440_positions_max_fields {
+    candle_id: uuid
+    robot_id: uuid
+}
+
+"aggregate min on columns"
+type v_candles1440_positions_min_fields {
+    candle_id: uuid
+    robot_id: uuid
+}
+
+"columns and relationships of \"v_candles15_positions\""
+type v_candles15_positions {
+    available: Int
+    "An object relationship"
+    candle: candles15
+    candle_id: uuid
+    position_entry(
+        "JSON select path"
+        path: String
+    ): json
+    position_exit(
+        "JSON select path"
+        path: String
+    ): json
+    "An object relationship"
+    robot: robots
+    robot_id: uuid
+}
+
+"aggregated selection of \"v_candles15_positions\""
+type v_candles15_positions_aggregate {
+    aggregate: v_candles15_positions_aggregate_fields
+    nodes: [v_candles15_positions!]!
+}
+
+"aggregate fields of \"v_candles15_positions\""
+type v_candles15_positions_aggregate_fields {
+    avg: v_candles15_positions_avg_fields
+    count(columns: [v_candles15_positions_select_column!], distinct: Boolean): Int
+    max: v_candles15_positions_max_fields
+    min: v_candles15_positions_min_fields
+    stddev: v_candles15_positions_stddev_fields
+    stddev_pop: v_candles15_positions_stddev_pop_fields
+    stddev_samp: v_candles15_positions_stddev_samp_fields
+    sum: v_candles15_positions_sum_fields
+    var_pop: v_candles15_positions_var_pop_fields
+    var_samp: v_candles15_positions_var_samp_fields
+    variance: v_candles15_positions_variance_fields
+}
+
+"aggregate avg on columns"
+type v_candles15_positions_avg_fields {
+    available: Float
+}
+
+"aggregate max on columns"
+type v_candles15_positions_max_fields {
+    available: Int
+    candle_id: uuid
+    robot_id: uuid
+}
+
+"aggregate min on columns"
+type v_candles15_positions_min_fields {
+    available: Int
+    candle_id: uuid
+    robot_id: uuid
+}
+
+"aggregate stddev on columns"
+type v_candles15_positions_stddev_fields {
+    available: Float
+}
+
+"aggregate stddev_pop on columns"
+type v_candles15_positions_stddev_pop_fields {
+    available: Float
+}
+
+"aggregate stddev_samp on columns"
+type v_candles15_positions_stddev_samp_fields {
+    available: Float
+}
+
+"aggregate sum on columns"
+type v_candles15_positions_sum_fields {
+    available: Int
+}
+
+"aggregate var_pop on columns"
+type v_candles15_positions_var_pop_fields {
+    available: Float
+}
+
+"aggregate var_samp on columns"
+type v_candles15_positions_var_samp_fields {
+    available: Float
+}
+
+"aggregate variance on columns"
+type v_candles15_positions_variance_fields {
+    available: Float
+}
+
+"columns and relationships of \"v_candles240_positions\""
+type v_candles240_positions {
+    available: Int
+    "An object relationship"
+    candle: candles240
+    candle_id: uuid
+    position_entry(
+        "JSON select path"
+        path: String
+    ): json
+    position_exit(
+        "JSON select path"
+        path: String
+    ): json
+    "An object relationship"
+    robot: robots
+    robot_id: uuid
+}
+
+"aggregated selection of \"v_candles240_positions\""
+type v_candles240_positions_aggregate {
+    aggregate: v_candles240_positions_aggregate_fields
+    nodes: [v_candles240_positions!]!
+}
+
+"aggregate fields of \"v_candles240_positions\""
+type v_candles240_positions_aggregate_fields {
+    avg: v_candles240_positions_avg_fields
+    count(columns: [v_candles240_positions_select_column!], distinct: Boolean): Int
+    max: v_candles240_positions_max_fields
+    min: v_candles240_positions_min_fields
+    stddev: v_candles240_positions_stddev_fields
+    stddev_pop: v_candles240_positions_stddev_pop_fields
+    stddev_samp: v_candles240_positions_stddev_samp_fields
+    sum: v_candles240_positions_sum_fields
+    var_pop: v_candles240_positions_var_pop_fields
+    var_samp: v_candles240_positions_var_samp_fields
+    variance: v_candles240_positions_variance_fields
+}
+
+"aggregate avg on columns"
+type v_candles240_positions_avg_fields {
+    available: Float
+}
+
+"aggregate max on columns"
+type v_candles240_positions_max_fields {
+    available: Int
+    candle_id: uuid
+    robot_id: uuid
+}
+
+"aggregate min on columns"
+type v_candles240_positions_min_fields {
+    available: Int
+    candle_id: uuid
+    robot_id: uuid
+}
+
+"aggregate stddev on columns"
+type v_candles240_positions_stddev_fields {
+    available: Float
+}
+
+"aggregate stddev_pop on columns"
+type v_candles240_positions_stddev_pop_fields {
+    available: Float
+}
+
+"aggregate stddev_samp on columns"
+type v_candles240_positions_stddev_samp_fields {
+    available: Float
+}
+
+"aggregate sum on columns"
+type v_candles240_positions_sum_fields {
+    available: Int
+}
+
+"aggregate var_pop on columns"
+type v_candles240_positions_var_pop_fields {
+    available: Float
+}
+
+"aggregate var_samp on columns"
+type v_candles240_positions_var_samp_fields {
+    available: Float
+}
+
+"aggregate variance on columns"
+type v_candles240_positions_variance_fields {
+    available: Float
+}
+
+"columns and relationships of \"v_candles30_positions\""
+type v_candles30_positions {
+    available: Int
+    "An object relationship"
+    candle: candles30
+    candle_id: uuid
+    position_entry(
+        "JSON select path"
+        path: String
+    ): json
+    position_exit(
+        "JSON select path"
+        path: String
+    ): json
+    "An object relationship"
+    robot: robots
+    robot_id: uuid
+}
+
+"aggregated selection of \"v_candles30_positions\""
+type v_candles30_positions_aggregate {
+    aggregate: v_candles30_positions_aggregate_fields
+    nodes: [v_candles30_positions!]!
+}
+
+"aggregate fields of \"v_candles30_positions\""
+type v_candles30_positions_aggregate_fields {
+    avg: v_candles30_positions_avg_fields
+    count(columns: [v_candles30_positions_select_column!], distinct: Boolean): Int
+    max: v_candles30_positions_max_fields
+    min: v_candles30_positions_min_fields
+    stddev: v_candles30_positions_stddev_fields
+    stddev_pop: v_candles30_positions_stddev_pop_fields
+    stddev_samp: v_candles30_positions_stddev_samp_fields
+    sum: v_candles30_positions_sum_fields
+    var_pop: v_candles30_positions_var_pop_fields
+    var_samp: v_candles30_positions_var_samp_fields
+    variance: v_candles30_positions_variance_fields
+}
+
+"aggregate avg on columns"
+type v_candles30_positions_avg_fields {
+    available: Float
+}
+
+"aggregate max on columns"
+type v_candles30_positions_max_fields {
+    available: Int
+    candle_id: uuid
+    robot_id: uuid
+}
+
+"aggregate min on columns"
+type v_candles30_positions_min_fields {
+    available: Int
+    candle_id: uuid
+    robot_id: uuid
+}
+
+"aggregate stddev on columns"
+type v_candles30_positions_stddev_fields {
+    available: Float
+}
+
+"aggregate stddev_pop on columns"
+type v_candles30_positions_stddev_pop_fields {
+    available: Float
+}
+
+"aggregate stddev_samp on columns"
+type v_candles30_positions_stddev_samp_fields {
+    available: Float
+}
+
+"aggregate sum on columns"
+type v_candles30_positions_sum_fields {
+    available: Int
+}
+
+"aggregate var_pop on columns"
+type v_candles30_positions_var_pop_fields {
+    available: Float
+}
+
+"aggregate var_samp on columns"
+type v_candles30_positions_var_samp_fields {
+    available: Float
+}
+
+"aggregate variance on columns"
+type v_candles30_positions_variance_fields {
+    available: Float
+}
+
+"columns and relationships of \"v_candles480_positions\""
+type v_candles480_positions {
+    available: Int
+    "An object relationship"
+    candle: candles480
+    candle_id: uuid
+    position_entry(
+        "JSON select path"
+        path: String
+    ): json
+    position_exit(
+        "JSON select path"
+        path: String
+    ): json
+    "An object relationship"
+    robot: robots
+    robot_id: uuid
+}
+
+"aggregated selection of \"v_candles480_positions\""
+type v_candles480_positions_aggregate {
+    aggregate: v_candles480_positions_aggregate_fields
+    nodes: [v_candles480_positions!]!
+}
+
+"aggregate fields of \"v_candles480_positions\""
+type v_candles480_positions_aggregate_fields {
+    avg: v_candles480_positions_avg_fields
+    count(columns: [v_candles480_positions_select_column!], distinct: Boolean): Int
+    max: v_candles480_positions_max_fields
+    min: v_candles480_positions_min_fields
+    stddev: v_candles480_positions_stddev_fields
+    stddev_pop: v_candles480_positions_stddev_pop_fields
+    stddev_samp: v_candles480_positions_stddev_samp_fields
+    sum: v_candles480_positions_sum_fields
+    var_pop: v_candles480_positions_var_pop_fields
+    var_samp: v_candles480_positions_var_samp_fields
+    variance: v_candles480_positions_variance_fields
+}
+
+"aggregate avg on columns"
+type v_candles480_positions_avg_fields {
+    available: Float
+}
+
+"aggregate max on columns"
+type v_candles480_positions_max_fields {
+    available: Int
+    candle_id: uuid
+    robot_id: uuid
+}
+
+"aggregate min on columns"
+type v_candles480_positions_min_fields {
+    available: Int
+    candle_id: uuid
+    robot_id: uuid
+}
+
+"aggregate stddev on columns"
+type v_candles480_positions_stddev_fields {
+    available: Float
+}
+
+"aggregate stddev_pop on columns"
+type v_candles480_positions_stddev_pop_fields {
+    available: Float
+}
+
+"aggregate stddev_samp on columns"
+type v_candles480_positions_stddev_samp_fields {
+    available: Float
+}
+
+"aggregate sum on columns"
+type v_candles480_positions_sum_fields {
+    available: Int
+}
+
+"aggregate var_pop on columns"
+type v_candles480_positions_var_pop_fields {
+    available: Float
+}
+
+"aggregate var_samp on columns"
+type v_candles480_positions_var_samp_fields {
+    available: Float
+}
+
+"aggregate variance on columns"
+type v_candles480_positions_variance_fields {
+    available: Float
+}
+
+"columns and relationships of \"v_candles5_positions\""
+type v_candles5_positions {
+    "An object relationship"
+    candle: candles5
+    candle_id: uuid
+    position_entry(
+        "JSON select path"
+        path: String
+    ): json
+    position_exit(
+        "JSON select path"
+        path: String
+    ): json
+    "An object relationship"
+    robot: robots
+    robot_id: uuid
+}
+
+"aggregated selection of \"v_candles5_positions\""
+type v_candles5_positions_aggregate {
+    aggregate: v_candles5_positions_aggregate_fields
+    nodes: [v_candles5_positions!]!
+}
+
+"aggregate fields of \"v_candles5_positions\""
+type v_candles5_positions_aggregate_fields {
+    count(columns: [v_candles5_positions_select_column!], distinct: Boolean): Int
+    max: v_candles5_positions_max_fields
+    min: v_candles5_positions_min_fields
+}
+
+"aggregate max on columns"
+type v_candles5_positions_max_fields {
+    candle_id: uuid
+    robot_id: uuid
+}
+
+"aggregate min on columns"
+type v_candles5_positions_min_fields {
+    candle_id: uuid
+    robot_id: uuid
+}
+
+"columns and relationships of \"v_candles60_positions\""
+type v_candles60_positions {
+    available: Int
+    "An object relationship"
+    candle: candles60
+    candle_id: uuid
+    position_entry(
+        "JSON select path"
+        path: String
+    ): json
+    position_exit(
+        "JSON select path"
+        path: String
+    ): json
+    "An object relationship"
+    robot: robots
+    robot_id: uuid
+}
+
+"aggregated selection of \"v_candles60_positions\""
+type v_candles60_positions_aggregate {
+    aggregate: v_candles60_positions_aggregate_fields
+    nodes: [v_candles60_positions!]!
+}
+
+"aggregate fields of \"v_candles60_positions\""
+type v_candles60_positions_aggregate_fields {
+    avg: v_candles60_positions_avg_fields
+    count(columns: [v_candles60_positions_select_column!], distinct: Boolean): Int
+    max: v_candles60_positions_max_fields
+    min: v_candles60_positions_min_fields
+    stddev: v_candles60_positions_stddev_fields
+    stddev_pop: v_candles60_positions_stddev_pop_fields
+    stddev_samp: v_candles60_positions_stddev_samp_fields
+    sum: v_candles60_positions_sum_fields
+    var_pop: v_candles60_positions_var_pop_fields
+    var_samp: v_candles60_positions_var_samp_fields
+    variance: v_candles60_positions_variance_fields
+}
+
+"aggregate avg on columns"
+type v_candles60_positions_avg_fields {
+    available: Float
+}
+
+"aggregate max on columns"
+type v_candles60_positions_max_fields {
+    available: Int
+    candle_id: uuid
+    robot_id: uuid
+}
+
+"aggregate min on columns"
+type v_candles60_positions_min_fields {
+    available: Int
+    candle_id: uuid
+    robot_id: uuid
+}
+
+"aggregate stddev on columns"
+type v_candles60_positions_stddev_fields {
+    available: Float
+}
+
+"aggregate stddev_pop on columns"
+type v_candles60_positions_stddev_pop_fields {
+    available: Float
+}
+
+"aggregate stddev_samp on columns"
+type v_candles60_positions_stddev_samp_fields {
+    available: Float
+}
+
+"aggregate sum on columns"
+type v_candles60_positions_sum_fields {
+    available: Int
+}
+
+"aggregate var_pop on columns"
+type v_candles60_positions_var_pop_fields {
+    available: Float
+}
+
+"aggregate var_samp on columns"
+type v_candles60_positions_var_samp_fields {
+    available: Float
+}
+
+"aggregate variance on columns"
+type v_candles60_positions_variance_fields {
+    available: Float
+}
+
+"columns and relationships of \"v_candles720_positions\""
+type v_candles720_positions {
+    available: Int
+    "An object relationship"
+    candle: candles720
+    candle_id: uuid
+    position_entry(
+        "JSON select path"
+        path: String
+    ): json
+    position_exit(
+        "JSON select path"
+        path: String
+    ): json
+    "An object relationship"
+    robot: robots
+    robot_id: uuid
+}
+
+"aggregated selection of \"v_candles720_positions\""
+type v_candles720_positions_aggregate {
+    aggregate: v_candles720_positions_aggregate_fields
+    nodes: [v_candles720_positions!]!
+}
+
+"aggregate fields of \"v_candles720_positions\""
+type v_candles720_positions_aggregate_fields {
+    avg: v_candles720_positions_avg_fields
+    count(columns: [v_candles720_positions_select_column!], distinct: Boolean): Int
+    max: v_candles720_positions_max_fields
+    min: v_candles720_positions_min_fields
+    stddev: v_candles720_positions_stddev_fields
+    stddev_pop: v_candles720_positions_stddev_pop_fields
+    stddev_samp: v_candles720_positions_stddev_samp_fields
+    sum: v_candles720_positions_sum_fields
+    var_pop: v_candles720_positions_var_pop_fields
+    var_samp: v_candles720_positions_var_samp_fields
+    variance: v_candles720_positions_variance_fields
+}
+
+"aggregate avg on columns"
+type v_candles720_positions_avg_fields {
+    available: Float
+}
+
+"aggregate max on columns"
+type v_candles720_positions_max_fields {
+    available: Int
+    candle_id: uuid
+    robot_id: uuid
+}
+
+"aggregate min on columns"
+type v_candles720_positions_min_fields {
+    available: Int
+    candle_id: uuid
+    robot_id: uuid
+}
+
+"aggregate stddev on columns"
+type v_candles720_positions_stddev_fields {
+    available: Float
+}
+
+"aggregate stddev_pop on columns"
+type v_candles720_positions_stddev_pop_fields {
+    available: Float
+}
+
+"aggregate stddev_samp on columns"
+type v_candles720_positions_stddev_samp_fields {
+    available: Float
+}
+
+"aggregate sum on columns"
+type v_candles720_positions_sum_fields {
+    available: Int
+}
+
+"aggregate var_pop on columns"
+type v_candles720_positions_var_pop_fields {
+    available: Float
+}
+
+"aggregate var_samp on columns"
+type v_candles720_positions_var_samp_fields {
+    available: Float
+}
+
+"aggregate variance on columns"
+type v_candles720_positions_variance_fields {
+    available: Float
+}
+
+"columns and relationships of \"v_robot_alerts\""
+type v_robot_alerts {
+    action: String
+    alert_priority: String
+    candle_timestamp: timestamp
+    order_type: String
+    position_code: String
+    position_id: uuid
+    price: numeric
+    "An object relationship"
+    robot: robots
+    robot_id: uuid
+    timestamp: timestamp
+    volume: numeric
+}
+
+"aggregated selection of \"v_robot_alerts\""
+type v_robot_alerts_aggregate {
+    aggregate: v_robot_alerts_aggregate_fields
+    nodes: [v_robot_alerts!]!
+}
+
+"aggregate fields of \"v_robot_alerts\""
+type v_robot_alerts_aggregate_fields {
+    avg: v_robot_alerts_avg_fields
+    count(columns: [v_robot_alerts_select_column!], distinct: Boolean): Int
+    max: v_robot_alerts_max_fields
+    min: v_robot_alerts_min_fields
+    stddev: v_robot_alerts_stddev_fields
+    stddev_pop: v_robot_alerts_stddev_pop_fields
+    stddev_samp: v_robot_alerts_stddev_samp_fields
+    sum: v_robot_alerts_sum_fields
+    var_pop: v_robot_alerts_var_pop_fields
+    var_samp: v_robot_alerts_var_samp_fields
+    variance: v_robot_alerts_variance_fields
+}
+
+"aggregate avg on columns"
+type v_robot_alerts_avg_fields {
+    price: Float
+    volume: Float
+}
+
+"aggregate max on columns"
+type v_robot_alerts_max_fields {
+    action: String
+    alert_priority: String
+    candle_timestamp: timestamp
+    order_type: String
+    position_code: String
+    position_id: uuid
+    price: numeric
+    robot_id: uuid
+    timestamp: timestamp
+    volume: numeric
+}
+
+"aggregate min on columns"
+type v_robot_alerts_min_fields {
+    action: String
+    alert_priority: String
+    candle_timestamp: timestamp
+    order_type: String
+    position_code: String
+    position_id: uuid
+    price: numeric
+    robot_id: uuid
+    timestamp: timestamp
+    volume: numeric
+}
+
+"aggregate stddev on columns"
+type v_robot_alerts_stddev_fields {
+    price: Float
+    volume: Float
+}
+
+"aggregate stddev_pop on columns"
+type v_robot_alerts_stddev_pop_fields {
+    price: Float
+    volume: Float
+}
+
+"aggregate stddev_samp on columns"
+type v_robot_alerts_stddev_samp_fields {
+    price: Float
+    volume: Float
+}
+
+"aggregate sum on columns"
+type v_robot_alerts_sum_fields {
+    price: numeric
+    volume: numeric
+}
+
+"aggregate var_pop on columns"
+type v_robot_alerts_var_pop_fields {
+    price: Float
+    volume: Float
+}
+
+"aggregate var_samp on columns"
+type v_robot_alerts_var_samp_fields {
+    price: Float
+    volume: Float
+}
+
+"aggregate variance on columns"
+type v_robot_alerts_variance_fields {
+    price: Float
+    volume: Float
+}
+
+"columns and relationships of \"v_robot_positions\""
+type v_robot_positions {
+    alerts(
+        "JSON select path"
+        path: String
+    ): jsonb
+    bars_held: Int
+    code: String
+    direction: String
+    entry_action: String
+    entry_candle_timestamp: timestamp
+    entry_date: timestamp
+    entry_order_type: String
+    entry_price: numeric
+    entry_status: String
+    exit_action: String
+    exit_candle_timestamp: timestamp
+    exit_date: timestamp
+    exit_order_type: String
+    exit_price: numeric
+    exit_status: String
+    fee: numeric
+    id: uuid
+    parent_id: uuid
+    prefix: String
+    profit: numeric
+    "An object relationship"
+    robot: robots
+    robot_id: uuid
+    status: String
+    volume: numeric
+}
+
+"aggregated selection of \"v_robot_positions\""
+type v_robot_positions_aggregate {
+    aggregate: v_robot_positions_aggregate_fields
+    nodes: [v_robot_positions!]!
+}
+
+"aggregate fields of \"v_robot_positions\""
+type v_robot_positions_aggregate_fields {
+    avg: v_robot_positions_avg_fields
+    count(columns: [v_robot_positions_select_column!], distinct: Boolean): Int
+    max: v_robot_positions_max_fields
+    min: v_robot_positions_min_fields
+    stddev: v_robot_positions_stddev_fields
+    stddev_pop: v_robot_positions_stddev_pop_fields
+    stddev_samp: v_robot_positions_stddev_samp_fields
+    sum: v_robot_positions_sum_fields
+    var_pop: v_robot_positions_var_pop_fields
+    var_samp: v_robot_positions_var_samp_fields
+    variance: v_robot_positions_variance_fields
+}
+
+"aggregate avg on columns"
+type v_robot_positions_avg_fields {
+    bars_held: Float
+    entry_price: Float
+    exit_price: Float
+    fee: Float
+    profit: Float
+    volume: Float
+}
+
+"aggregate max on columns"
+type v_robot_positions_max_fields {
+    bars_held: Int
+    code: String
+    direction: String
+    entry_action: String
+    entry_candle_timestamp: timestamp
+    entry_date: timestamp
+    entry_order_type: String
+    entry_price: numeric
+    entry_status: String
+    exit_action: String
+    exit_candle_timestamp: timestamp
+    exit_date: timestamp
+    exit_order_type: String
+    exit_price: numeric
+    exit_status: String
+    fee: numeric
+    id: uuid
+    parent_id: uuid
+    prefix: String
+    profit: numeric
+    robot_id: uuid
+    status: String
+    volume: numeric
+}
+
+"aggregate min on columns"
+type v_robot_positions_min_fields {
+    bars_held: Int
+    code: String
+    direction: String
+    entry_action: String
+    entry_candle_timestamp: timestamp
+    entry_date: timestamp
+    entry_order_type: String
+    entry_price: numeric
+    entry_status: String
+    exit_action: String
+    exit_candle_timestamp: timestamp
+    exit_date: timestamp
+    exit_order_type: String
+    exit_price: numeric
+    exit_status: String
+    fee: numeric
+    id: uuid
+    parent_id: uuid
+    prefix: String
+    profit: numeric
+    robot_id: uuid
+    status: String
+    volume: numeric
+}
+
+"aggregate stddev on columns"
+type v_robot_positions_stddev_fields {
+    bars_held: Float
+    entry_price: Float
+    exit_price: Float
+    fee: Float
+    profit: Float
+    volume: Float
+}
+
+"aggregate stddev_pop on columns"
+type v_robot_positions_stddev_pop_fields {
+    bars_held: Float
+    entry_price: Float
+    exit_price: Float
+    fee: Float
+    profit: Float
+    volume: Float
+}
+
+"aggregate stddev_samp on columns"
+type v_robot_positions_stddev_samp_fields {
+    bars_held: Float
+    entry_price: Float
+    exit_price: Float
+    fee: Float
+    profit: Float
+    volume: Float
+}
+
+"aggregate sum on columns"
+type v_robot_positions_sum_fields {
+    bars_held: Int
+    entry_price: numeric
+    exit_price: numeric
+    fee: numeric
+    profit: numeric
+    volume: numeric
+}
+
+"aggregate var_pop on columns"
+type v_robot_positions_var_pop_fields {
+    bars_held: Float
+    entry_price: Float
+    exit_price: Float
+    fee: Float
+    profit: Float
+    volume: Float
+}
+
+"aggregate var_samp on columns"
+type v_robot_positions_var_samp_fields {
+    bars_held: Float
+    entry_price: Float
+    exit_price: Float
+    fee: Float
+    profit: Float
+    volume: Float
+}
+
+"aggregate variance on columns"
+type v_robot_positions_variance_fields {
+    bars_held: Float
+    entry_price: Float
+    exit_price: Float
+    fee: Float
+    profit: Float
+    volume: Float
+}
+
+"columns and relationships of \"v_robot_settings\""
+type v_robot_settings {
+    "An object relationship"
+    robot: robots
+    robot_id: uuid
+    robot_settings(
+        "JSON select path"
+        path: String
+    ): jsonb
+}
+
+"columns and relationships of \"v_robot_stats\""
+type v_robot_stats {
+    avg_bars_held: numeric
+    avg_bars_held_losing: numeric
+    avg_bars_held_winning: numeric
+    avg_loss: numeric
+    avg_net_profit: numeric
+    avg_profit: numeric
+    avg_profit_winners: numeric
+    current_loss_sequence: numeric
+    current_win_sequence: numeric
+    equity(
+        "JSON select path"
+        path: String
+    ): jsonb
+    equity_avg(
+        "JSON select path"
+        path: String
+    ): jsonb
+    full_stats(
+        "JSON select path"
+        path: String
+    ): jsonb
+    gross_loss: numeric
+    gross_profit: numeric
+    last_updated_at: timestamp
+    local_max: numeric
+    loss_rate: numeric
+    max_consec_losses: numeric
+    max_consec_wins: numeric
+    max_drawdown: numeric
+    max_drawdown_date: timestamp
+    net_profit: numeric
+    payoff_ratio: numeric
+    profit_factor: numeric
+    rating: numeric
+    recovery_factor: numeric
+    "An object relationship"
+    robot: robots
+    robot_id: uuid
+    trades_count: numeric
+    trades_losing: numeric
+    trades_winning: numeric
+    win_rate: numeric
+}
+
+"select columns of table \"candles120\""
+enum candles120_select_column {
+    "column name"
+    asset
+    "column name"
+    close
+    "column name"
+    currency
+    "column name"
+    exchange
+    "column name"
+    high
+    "column name"
+    id
+    "column name"
+    low
+    "column name"
+    open
+    "column name"
+    time
+    "column name"
+    timestamp
+    "column name"
+    type
+    "column name"
+    volume
+}
+
+"select columns of table \"candles1440\""
+enum candles1440_select_column
+
+"select columns of table \"candles15\""
+enum candles15_select_column {
+    "column name"
+    asset
+    "column name"
+    close
+    "column name"
+    currency
+    "column name"
+    exchange
+    "column name"
+    high
+    "column name"
+    id
+    "column name"
+    low
+    "column name"
+    open
+    "column name"
+    time
+    "column name"
+    timestamp
+    "column name"
+    type
+    "column name"
+    volume
+}
+
+"select columns of table \"candles240\""
+enum candles240_select_column {
+    "column name"
+    asset
+    "column name"
+    close
+    "column name"
+    currency
+    "column name"
+    exchange
+    "column name"
+    high
+    "column name"
+    id
+    "column name"
+    low
+    "column name"
+    open
+    "column name"
+    time
+    "column name"
+    timestamp
+    "column name"
+    type
+    "column name"
+    volume
+}
+
+"select columns of table \"candles30\""
+enum candles30_select_column {
+    "column name"
+    asset
+    "column name"
+    close
+    "column name"
+    currency
+    "column name"
+    exchange
+    "column name"
+    high
+    "column name"
+    id
+    "column name"
+    low
+    "column name"
+    open
+    "column name"
+    time
+    "column name"
+    timestamp
+    "column name"
+    type
+    "column name"
+    volume
+}
+
+"select columns of table \"candles480\""
+enum candles480_select_column {
+    "column name"
+    asset
+    "column name"
+    close
+    "column name"
+    currency
+    "column name"
+    exchange
+    "column name"
+    high
+    "column name"
+    id
+    "column name"
+    low
+    "column name"
+    open
+    "column name"
+    time
+    "column name"
+    timestamp
+    "column name"
+    type
+    "column name"
+    volume
+}
+
+"select columns of table \"candles5\""
+enum candles5_select_column {
+    "column name"
+    asset
+    "column name"
+    close
+    "column name"
+    currency
+    "column name"
+    exchange
+    "column name"
+    high
+    "column name"
+    id
+    "column name"
+    low
+    "column name"
+    open
+    "column name"
+    time
+    "column name"
+    timestamp
+    "column name"
+    type
+    "column name"
+    volume
+}
+
+"select columns of table \"candles60\""
+enum candles60_select_column {
+    "column name"
+    asset
+    "column name"
+    close
+    "column name"
+    currency
+    "column name"
+    exchange
+    "column name"
+    high
+    "column name"
+    id
+    "column name"
+    low
+    "column name"
+    open
+    "column name"
+    time
+    "column name"
+    timestamp
+    "column name"
+    type
+    "column name"
+    volume
+}
+
+"select columns of table \"candles720\""
+enum candles720_select_column {
+    "column name"
+    asset
+    "column name"
+    close
+    "column name"
+    currency
+    "column name"
+    exchange
+    "column name"
+    high
+    "column name"
+    id
+    "column name"
+    low
+    "column name"
+    open
+    "column name"
+    time
+    "column name"
+    timestamp
+    "column name"
+    type
+    "column name"
+    volume
+}
+
+"column ordering options"
+enum order_by {
+    "in the ascending order, nulls last"
+    asc
+    "in the ascending order, nulls first"
+    asc_nulls_first
+    "in the ascending order, nulls last"
+    asc_nulls_last
+    "in the descending order, nulls first"
+    desc
+    "in the descending order, nulls first"
+    desc_nulls_first
+    "in the descending order, nulls last"
+    desc_nulls_last
+}
+
+"select columns of table \"robot_stats\""
+enum robot_stats_select_column {
+    "column name"
+    equity
+    "column name"
+    equity_avg
+    "column name"
+    last_position_exit_date
+    "column name"
+    last_updated_at
+    "column name"
+    robot_id
+    "column name"
+    statistics
+}
+
+"select columns of table \"robots\""
+enum robots_select_column {
+    "column name"
+    asset
+    "column name"
+    available
+    "column name"
+    code
+    "column name"
+    currency
+    "column name"
+    exchange
+    "column name"
+    id
+    "column name"
+    mod
+    "column name"
+    name
+    "column name"
+    signals
+    "column name"
+    started_at
+    "column name"
+    status
+    "column name"
+    stopped_at
+    "column name"
+    timeframe
+    "column name"
+    trading
+}
+
+"select columns of table \"strategies\""
+enum strategies_select_column {
+    "column name"
+    description
+    "column name"
+    id
+    "column name"
+    name
+}
+
+"select columns of table \"v_candles120_positions\""
+enum v_candles120_positions_select_column {
+    "column name"
+    candle_id
+    "column name"
+    position_entry
+    "column name"
+    position_exit
+    "column name"
+    robot_id
+}
+
+"select columns of table \"v_candles1440_positions\""
+enum v_candles1440_positions_select_column {
+    "column name"
+    candle_id
+    "column name"
+    position_entry
+    "column name"
+    position_exit
+    "column name"
+    robot_id
+}
+
+"select columns of table \"v_candles15_positions\""
+enum v_candles15_positions_select_column {
+    "column name"
+    available
+    "column name"
+    candle_id
+    "column name"
+    position_entry
+    "column name"
+    position_exit
+    "column name"
+    robot_id
+}
+
+"select columns of table \"v_candles240_positions\""
+enum v_candles240_positions_select_column {
+    "column name"
+    available
+    "column name"
+    candle_id
+    "column name"
+    position_entry
+    "column name"
+    position_exit
+    "column name"
+    robot_id
+}
+
+"select columns of table \"v_candles30_positions\""
+enum v_candles30_positions_select_column {
+    "column name"
+    available
+    "column name"
+    candle_id
+    "column name"
+    position_entry
+    "column name"
+    position_exit
+    "column name"
+    robot_id
+}
+
+"select columns of table \"v_candles480_positions\""
+enum v_candles480_positions_select_column {
+    "column name"
+    available
+    "column name"
+    candle_id
+    "column name"
+    position_entry
+    "column name"
+    position_exit
+    "column name"
+    robot_id
+}
+
+"select columns of table \"v_candles5_positions\""
+enum v_candles5_positions_select_column {
+    "column name"
+    candle_id
+    "column name"
+    position_entry
+    "column name"
+    position_exit
+    "column name"
+    robot_id
+}
+
+"select columns of table \"v_candles60_positions\""
+enum v_candles60_positions_select_column {
+    "column name"
+    available
+    "column name"
+    candle_id
+    "column name"
+    position_entry
+    "column name"
+    position_exit
+    "column name"
+    robot_id
+}
+
+"select columns of table \"v_candles720_positions\""
+enum v_candles720_positions_select_column {
+    "column name"
+    available
+    "column name"
+    candle_id
+    "column name"
+    position_entry
+    "column name"
+    position_exit
+    "column name"
+    robot_id
+}
+
+"select columns of table \"v_robot_alerts\""
+enum v_robot_alerts_select_column {
+    "column name"
+    action
+    "column name"
+    alert_priority
+    "column name"
+    candle_timestamp
+    "column name"
+    order_type
+    "column name"
+    position_code
+    "column name"
+    position_id
+    "column name"
+    price
+    "column name"
+    robot_id
+    "column name"
+    timestamp
+    "column name"
+    volume
+}
+
+"select columns of table \"v_robot_positions\""
+enum v_robot_positions_select_column {
+    "column name"
+    alerts
+    "column name"
+    bars_held
+    "column name"
+    code
+    "column name"
+    direction
+    "column name"
+    entry_action
+    "column name"
+    entry_candle_timestamp
+    "column name"
+    entry_date
+    "column name"
+    entry_order_type
+    "column name"
+    entry_price
+    "column name"
+    entry_status
+    "column name"
+    exit_action
+    "column name"
+    exit_candle_timestamp
+    "column name"
+    exit_date
+    "column name"
+    exit_order_type
+    "column name"
+    exit_price
+    "column name"
+    exit_status
+    "column name"
+    fee
+    "column name"
+    id
+    "column name"
+    parent_id
+    "column name"
+    prefix
+    "column name"
+    profit
+    "column name"
+    robot_id
+    "column name"
+    status
+    "column name"
+    volume
+}
+
+"select columns of table \"v_robot_settings\""
+enum v_robot_settings_select_column {
+    "column name"
+    robot_id
+    "column name"
+    robot_settings
+}
+
+"select columns of table \"v_robot_stats\""
+enum v_robot_stats_select_column {
+    "column name"
+    avg_bars_held
+    "column name"
+    avg_bars_held_losing
+    "column name"
+    avg_bars_held_winning
+    "column name"
+    avg_loss
+    "column name"
+    avg_net_profit
+    "column name"
+    avg_profit
+    "column name"
+    avg_profit_winners
+    "column name"
+    current_loss_sequence
+    "column name"
+    current_win_sequence
+    "column name"
+    equity
+    "column name"
+    equity_avg
+    "column name"
+    full_stats
+    "column name"
+    gross_loss
+    "column name"
+    gross_profit
+    "column name"
+    last_updated_at
+    "column name"
+    local_max
+    "column name"
+    loss_rate
+    "column name"
+    max_consec_losses
+    "column name"
+    max_consec_wins
+    "column name"
+    max_drawdown
+    "column name"
+    max_drawdown_date
+    "column name"
+    net_profit
+    "column name"
+    payoff_ratio
+    "column name"
+    profit_factor
+    "column name"
+    rating
+    "column name"
+    recovery_factor
+    "column name"
+    robot_id
+    "column name"
+    trades_count
+    "column name"
+    trades_losing
+    "column name"
+    trades_winning
+    "column name"
+    win_rate
+}
+
+"expression to compare columns of type Boolean. All fields are combined with logical 'AND'."
+input Boolean_comparison_exp {
+    _eq: Boolean
+    _gt: Boolean
+    _gte: Boolean
+    _in: [Boolean!]
+    _is_null: Boolean
+    _lt: Boolean
+    _lte: Boolean
+    _neq: Boolean
+    _nin: [Boolean!]
+}
+
+input ExchangeKeys {
+    key: String!
+    pass: String
+    secret: String!
+}
+
+"expression to compare columns of type Int. All fields are combined with logical 'AND'."
+input Int_comparison_exp {
+    _eq: Int
+    _gt: Int
+    _gte: Int
+    _in: [Int!]
+    _is_null: Boolean
+    _lt: Int
+    _lte: Int
+    _neq: Int
+    _nin: [Int!]
+}
+
+input SampleInput {
+    password: String!
+    username: String!
+}
+
+"expression to compare columns of type String. All fields are combined with logical 'AND'."
+input String_comparison_exp {
+    _eq: String
+    _gt: String
+    _gte: String
+    _ilike: String
+    _in: [String!]
+    _is_null: Boolean
+    _like: String
+    _lt: String
+    _lte: String
+    _neq: String
+    _nilike: String
+    _nin: [String!]
+    _nlike: String
+    _nsimilar: String
+    _similar: String
+}
+
+input TelegramInput {
+    auth_date: Int!
+    first_name: String
+    hash: String!
+    id: Int!
+    last_name: String
+    photo_url: String
+    username: String
+}
+
+input UserRobotSettings {
+    balancePercent: numeric
+    initialVolume: numeric
+    volume: numeric
+    volumeInCurrency: numeric
+    volumeType: String!
+}
+
+input UserSignalSettings {
+    volume: numeric
+    volumeInCurrency: numeric
+    volumeType: String!
+}
+
+"expression to compare columns of type bigint. All fields are combined with logical 'AND'."
+input bigint_comparison_exp {
+    _eq: bigint
+    _gt: bigint
+    _gte: bigint
+    _in: [bigint!]
+    _is_null: Boolean
+    _lt: bigint
+    _lte: bigint
+    _neq: bigint
+    _nin: [bigint!]
+}
+
+"order by aggregate values of table \"candles120\""
+input candles120_aggregate_order_by {
+    avg: candles120_avg_order_by
+    count: order_by
+    max: candles120_max_order_by
+    min: candles120_min_order_by
+    stddev: candles120_stddev_order_by
+    stddev_pop: candles120_stddev_pop_order_by
+    stddev_samp: candles120_stddev_samp_order_by
+    sum: candles120_sum_order_by
+    var_pop: candles120_var_pop_order_by
+    var_samp: candles120_var_samp_order_by
+    variance: candles120_variance_order_by
+}
+
+"order by avg() on columns of table \"candles120\""
+input candles120_avg_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"Boolean expression to filter rows from the table \"candles120\". All fields are combined with a logical 'AND'."
+input candles120_bool_exp {
+    _and: [candles120_bool_exp]
+    _not: candles120_bool_exp
+    _or: [candles120_bool_exp]
+    asset: String_comparison_exp
+    close: numeric_comparison_exp
+    currency: String_comparison_exp
+    exchange: String_comparison_exp
+    high: numeric_comparison_exp
+    id: uuid_comparison_exp
+    low: numeric_comparison_exp
+    open: numeric_comparison_exp
+    time: bigint_comparison_exp
+    timestamp: timestamp_comparison_exp
+    type: String_comparison_exp
+    volume: numeric_comparison_exp
+}
+
+"order by max() on columns of table \"candles120\""
+input candles120_max_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"order by min() on columns of table \"candles120\""
+input candles120_min_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"ordering options when selecting data from \"candles120\""
+input candles120_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"primary key columns input for table: \"candles120\""
+input candles120_pk_columns_input {
+    id: uuid!
+}
+
+"order by stddev() on columns of table \"candles120\""
+input candles120_stddev_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by stddev_pop() on columns of table \"candles120\""
+input candles120_stddev_pop_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by stddev_samp() on columns of table \"candles120\""
+input candles120_stddev_samp_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by sum() on columns of table \"candles120\""
+input candles120_sum_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by var_pop() on columns of table \"candles120\""
+input candles120_var_pop_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by var_samp() on columns of table \"candles120\""
+input candles120_var_samp_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by variance() on columns of table \"candles120\""
+input candles120_variance_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by aggregate values of table \"candles1440\""
+input candles1440_aggregate_order_by {
+    count: order_by
+}
+
+"Boolean expression to filter rows from the table \"candles1440\". All fields are combined with a logical 'AND'."
+input candles1440_bool_exp {
+    _and: [candles1440_bool_exp]
+    _not: candles1440_bool_exp
+    _or: [candles1440_bool_exp]
+}
+
+"ordering options when selecting data from \"candles1440\""
+input candles1440_order_by
+
+"primary key columns input for table: \"candles1440\""
+input candles1440_pk_columns_input {
+    id: uuid!
+}
+
+"order by aggregate values of table \"candles15\""
+input candles15_aggregate_order_by {
+    avg: candles15_avg_order_by
+    count: order_by
+    max: candles15_max_order_by
+    min: candles15_min_order_by
+    stddev: candles15_stddev_order_by
+    stddev_pop: candles15_stddev_pop_order_by
+    stddev_samp: candles15_stddev_samp_order_by
+    sum: candles15_sum_order_by
+    var_pop: candles15_var_pop_order_by
+    var_samp: candles15_var_samp_order_by
+    variance: candles15_variance_order_by
+}
+
+"order by avg() on columns of table \"candles15\""
+input candles15_avg_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"Boolean expression to filter rows from the table \"candles15\". All fields are combined with a logical 'AND'."
+input candles15_bool_exp {
+    _and: [candles15_bool_exp]
+    _not: candles15_bool_exp
+    _or: [candles15_bool_exp]
+    asset: String_comparison_exp
+    close: numeric_comparison_exp
+    currency: String_comparison_exp
+    exchange: String_comparison_exp
+    high: numeric_comparison_exp
+    id: uuid_comparison_exp
+    low: numeric_comparison_exp
+    open: numeric_comparison_exp
+    time: bigint_comparison_exp
+    timestamp: timestamp_comparison_exp
+    type: String_comparison_exp
+    volume: numeric_comparison_exp
+}
+
+"order by max() on columns of table \"candles15\""
+input candles15_max_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"order by min() on columns of table \"candles15\""
+input candles15_min_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"ordering options when selecting data from \"candles15\""
+input candles15_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"primary key columns input for table: \"candles15\""
+input candles15_pk_columns_input {
+    id: uuid!
+}
+
+"order by stddev() on columns of table \"candles15\""
+input candles15_stddev_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by stddev_pop() on columns of table \"candles15\""
+input candles15_stddev_pop_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by stddev_samp() on columns of table \"candles15\""
+input candles15_stddev_samp_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by sum() on columns of table \"candles15\""
+input candles15_sum_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by var_pop() on columns of table \"candles15\""
+input candles15_var_pop_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by var_samp() on columns of table \"candles15\""
+input candles15_var_samp_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by variance() on columns of table \"candles15\""
+input candles15_variance_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by aggregate values of table \"candles240\""
+input candles240_aggregate_order_by {
+    avg: candles240_avg_order_by
+    count: order_by
+    max: candles240_max_order_by
+    min: candles240_min_order_by
+    stddev: candles240_stddev_order_by
+    stddev_pop: candles240_stddev_pop_order_by
+    stddev_samp: candles240_stddev_samp_order_by
+    sum: candles240_sum_order_by
+    var_pop: candles240_var_pop_order_by
+    var_samp: candles240_var_samp_order_by
+    variance: candles240_variance_order_by
+}
+
+"order by avg() on columns of table \"candles240\""
+input candles240_avg_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"Boolean expression to filter rows from the table \"candles240\". All fields are combined with a logical 'AND'."
+input candles240_bool_exp {
+    _and: [candles240_bool_exp]
+    _not: candles240_bool_exp
+    _or: [candles240_bool_exp]
+    asset: String_comparison_exp
+    close: numeric_comparison_exp
+    currency: String_comparison_exp
+    exchange: String_comparison_exp
+    high: numeric_comparison_exp
+    id: uuid_comparison_exp
+    low: numeric_comparison_exp
+    open: numeric_comparison_exp
+    time: bigint_comparison_exp
+    timestamp: timestamp_comparison_exp
+    type: String_comparison_exp
+    volume: numeric_comparison_exp
+}
+
+"order by max() on columns of table \"candles240\""
+input candles240_max_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"order by min() on columns of table \"candles240\""
+input candles240_min_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"ordering options when selecting data from \"candles240\""
+input candles240_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"primary key columns input for table: \"candles240\""
+input candles240_pk_columns_input {
+    id: uuid!
+}
+
+"order by stddev() on columns of table \"candles240\""
+input candles240_stddev_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by stddev_pop() on columns of table \"candles240\""
+input candles240_stddev_pop_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by stddev_samp() on columns of table \"candles240\""
+input candles240_stddev_samp_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by sum() on columns of table \"candles240\""
+input candles240_sum_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by var_pop() on columns of table \"candles240\""
+input candles240_var_pop_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by var_samp() on columns of table \"candles240\""
+input candles240_var_samp_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by variance() on columns of table \"candles240\""
+input candles240_variance_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by aggregate values of table \"candles30\""
+input candles30_aggregate_order_by {
+    avg: candles30_avg_order_by
+    count: order_by
+    max: candles30_max_order_by
+    min: candles30_min_order_by
+    stddev: candles30_stddev_order_by
+    stddev_pop: candles30_stddev_pop_order_by
+    stddev_samp: candles30_stddev_samp_order_by
+    sum: candles30_sum_order_by
+    var_pop: candles30_var_pop_order_by
+    var_samp: candles30_var_samp_order_by
+    variance: candles30_variance_order_by
+}
+
+"order by avg() on columns of table \"candles30\""
+input candles30_avg_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"Boolean expression to filter rows from the table \"candles30\". All fields are combined with a logical 'AND'."
+input candles30_bool_exp {
+    _and: [candles30_bool_exp]
+    _not: candles30_bool_exp
+    _or: [candles30_bool_exp]
+    asset: String_comparison_exp
+    close: numeric_comparison_exp
+    currency: String_comparison_exp
+    exchange: String_comparison_exp
+    high: numeric_comparison_exp
+    id: uuid_comparison_exp
+    low: numeric_comparison_exp
+    open: numeric_comparison_exp
+    time: bigint_comparison_exp
+    timestamp: timestamp_comparison_exp
+    type: String_comparison_exp
+    volume: numeric_comparison_exp
+}
+
+"order by max() on columns of table \"candles30\""
+input candles30_max_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"order by min() on columns of table \"candles30\""
+input candles30_min_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"ordering options when selecting data from \"candles30\""
+input candles30_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"primary key columns input for table: \"candles30\""
+input candles30_pk_columns_input {
+    id: uuid!
+}
+
+"order by stddev() on columns of table \"candles30\""
+input candles30_stddev_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by stddev_pop() on columns of table \"candles30\""
+input candles30_stddev_pop_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by stddev_samp() on columns of table \"candles30\""
+input candles30_stddev_samp_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by sum() on columns of table \"candles30\""
+input candles30_sum_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by var_pop() on columns of table \"candles30\""
+input candles30_var_pop_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by var_samp() on columns of table \"candles30\""
+input candles30_var_samp_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by variance() on columns of table \"candles30\""
+input candles30_variance_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by aggregate values of table \"candles480\""
+input candles480_aggregate_order_by {
+    avg: candles480_avg_order_by
+    count: order_by
+    max: candles480_max_order_by
+    min: candles480_min_order_by
+    stddev: candles480_stddev_order_by
+    stddev_pop: candles480_stddev_pop_order_by
+    stddev_samp: candles480_stddev_samp_order_by
+    sum: candles480_sum_order_by
+    var_pop: candles480_var_pop_order_by
+    var_samp: candles480_var_samp_order_by
+    variance: candles480_variance_order_by
+}
+
+"order by avg() on columns of table \"candles480\""
+input candles480_avg_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"Boolean expression to filter rows from the table \"candles480\". All fields are combined with a logical 'AND'."
+input candles480_bool_exp {
+    _and: [candles480_bool_exp]
+    _not: candles480_bool_exp
+    _or: [candles480_bool_exp]
+    asset: String_comparison_exp
+    close: numeric_comparison_exp
+    currency: String_comparison_exp
+    exchange: String_comparison_exp
+    high: numeric_comparison_exp
+    id: uuid_comparison_exp
+    low: numeric_comparison_exp
+    open: numeric_comparison_exp
+    time: bigint_comparison_exp
+    timestamp: timestamp_comparison_exp
+    type: String_comparison_exp
+    volume: numeric_comparison_exp
+}
+
+"order by max() on columns of table \"candles480\""
+input candles480_max_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"order by min() on columns of table \"candles480\""
+input candles480_min_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"ordering options when selecting data from \"candles480\""
+input candles480_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"primary key columns input for table: \"candles480\""
+input candles480_pk_columns_input {
+    id: uuid!
+}
+
+"order by stddev() on columns of table \"candles480\""
+input candles480_stddev_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by stddev_pop() on columns of table \"candles480\""
+input candles480_stddev_pop_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by stddev_samp() on columns of table \"candles480\""
+input candles480_stddev_samp_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by sum() on columns of table \"candles480\""
+input candles480_sum_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by var_pop() on columns of table \"candles480\""
+input candles480_var_pop_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by var_samp() on columns of table \"candles480\""
+input candles480_var_samp_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by variance() on columns of table \"candles480\""
+input candles480_variance_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by aggregate values of table \"candles5\""
+input candles5_aggregate_order_by {
+    avg: candles5_avg_order_by
+    count: order_by
+    max: candles5_max_order_by
+    min: candles5_min_order_by
+    stddev: candles5_stddev_order_by
+    stddev_pop: candles5_stddev_pop_order_by
+    stddev_samp: candles5_stddev_samp_order_by
+    sum: candles5_sum_order_by
+    var_pop: candles5_var_pop_order_by
+    var_samp: candles5_var_samp_order_by
+    variance: candles5_variance_order_by
+}
+
+"order by avg() on columns of table \"candles5\""
+input candles5_avg_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"Boolean expression to filter rows from the table \"candles5\". All fields are combined with a logical 'AND'."
+input candles5_bool_exp {
+    _and: [candles5_bool_exp]
+    _not: candles5_bool_exp
+    _or: [candles5_bool_exp]
+    asset: String_comparison_exp
+    close: numeric_comparison_exp
+    currency: String_comparison_exp
+    exchange: String_comparison_exp
+    high: numeric_comparison_exp
+    id: uuid_comparison_exp
+    low: numeric_comparison_exp
+    open: numeric_comparison_exp
+    time: bigint_comparison_exp
+    timestamp: timestamp_comparison_exp
+    type: String_comparison_exp
+    volume: numeric_comparison_exp
+}
+
+"order by max() on columns of table \"candles5\""
+input candles5_max_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"order by min() on columns of table \"candles5\""
+input candles5_min_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"ordering options when selecting data from \"candles5\""
+input candles5_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"primary key columns input for table: \"candles5\""
+input candles5_pk_columns_input {
+    id: uuid!
+}
+
+"order by stddev() on columns of table \"candles5\""
+input candles5_stddev_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by stddev_pop() on columns of table \"candles5\""
+input candles5_stddev_pop_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by stddev_samp() on columns of table \"candles5\""
+input candles5_stddev_samp_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by sum() on columns of table \"candles5\""
+input candles5_sum_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by var_pop() on columns of table \"candles5\""
+input candles5_var_pop_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by var_samp() on columns of table \"candles5\""
+input candles5_var_samp_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by variance() on columns of table \"candles5\""
+input candles5_variance_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by aggregate values of table \"candles60\""
+input candles60_aggregate_order_by {
+    avg: candles60_avg_order_by
+    count: order_by
+    max: candles60_max_order_by
+    min: candles60_min_order_by
+    stddev: candles60_stddev_order_by
+    stddev_pop: candles60_stddev_pop_order_by
+    stddev_samp: candles60_stddev_samp_order_by
+    sum: candles60_sum_order_by
+    var_pop: candles60_var_pop_order_by
+    var_samp: candles60_var_samp_order_by
+    variance: candles60_variance_order_by
+}
+
+"order by avg() on columns of table \"candles60\""
+input candles60_avg_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"Boolean expression to filter rows from the table \"candles60\". All fields are combined with a logical 'AND'."
+input candles60_bool_exp {
+    _and: [candles60_bool_exp]
+    _not: candles60_bool_exp
+    _or: [candles60_bool_exp]
+    asset: String_comparison_exp
+    close: numeric_comparison_exp
+    currency: String_comparison_exp
+    exchange: String_comparison_exp
+    high: numeric_comparison_exp
+    id: uuid_comparison_exp
+    low: numeric_comparison_exp
+    open: numeric_comparison_exp
+    time: bigint_comparison_exp
+    timestamp: timestamp_comparison_exp
+    type: String_comparison_exp
+    volume: numeric_comparison_exp
+}
+
+"order by max() on columns of table \"candles60\""
+input candles60_max_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"order by min() on columns of table \"candles60\""
+input candles60_min_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"ordering options when selecting data from \"candles60\""
+input candles60_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"primary key columns input for table: \"candles60\""
+input candles60_pk_columns_input {
+    id: uuid!
+}
+
+"order by stddev() on columns of table \"candles60\""
+input candles60_stddev_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by stddev_pop() on columns of table \"candles60\""
+input candles60_stddev_pop_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by stddev_samp() on columns of table \"candles60\""
+input candles60_stddev_samp_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by sum() on columns of table \"candles60\""
+input candles60_sum_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by var_pop() on columns of table \"candles60\""
+input candles60_var_pop_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by var_samp() on columns of table \"candles60\""
+input candles60_var_samp_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by variance() on columns of table \"candles60\""
+input candles60_variance_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by aggregate values of table \"candles720\""
+input candles720_aggregate_order_by {
+    avg: candles720_avg_order_by
+    count: order_by
+    max: candles720_max_order_by
+    min: candles720_min_order_by
+    stddev: candles720_stddev_order_by
+    stddev_pop: candles720_stddev_pop_order_by
+    stddev_samp: candles720_stddev_samp_order_by
+    sum: candles720_sum_order_by
+    var_pop: candles720_var_pop_order_by
+    var_samp: candles720_var_samp_order_by
+    variance: candles720_variance_order_by
+}
+
+"order by avg() on columns of table \"candles720\""
+input candles720_avg_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"Boolean expression to filter rows from the table \"candles720\". All fields are combined with a logical 'AND'."
+input candles720_bool_exp {
+    _and: [candles720_bool_exp]
+    _not: candles720_bool_exp
+    _or: [candles720_bool_exp]
+    asset: String_comparison_exp
+    close: numeric_comparison_exp
+    currency: String_comparison_exp
+    exchange: String_comparison_exp
+    high: numeric_comparison_exp
+    id: uuid_comparison_exp
+    low: numeric_comparison_exp
+    open: numeric_comparison_exp
+    time: bigint_comparison_exp
+    timestamp: timestamp_comparison_exp
+    type: String_comparison_exp
+    volume: numeric_comparison_exp
+}
+
+"order by max() on columns of table \"candles720\""
+input candles720_max_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"order by min() on columns of table \"candles720\""
+input candles720_min_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"ordering options when selecting data from \"candles720\""
+input candles720_order_by {
+    asset: order_by
+    close: order_by
+    currency: order_by
+    exchange: order_by
+    high: order_by
+    id: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    timestamp: order_by
+    type: order_by
+    volume: order_by
+}
+
+"primary key columns input for table: \"candles720\""
+input candles720_pk_columns_input {
+    id: uuid!
+}
+
+"order by stddev() on columns of table \"candles720\""
+input candles720_stddev_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by stddev_pop() on columns of table \"candles720\""
+input candles720_stddev_pop_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by stddev_samp() on columns of table \"candles720\""
+input candles720_stddev_samp_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by sum() on columns of table \"candles720\""
+input candles720_sum_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by var_pop() on columns of table \"candles720\""
+input candles720_var_pop_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by var_samp() on columns of table \"candles720\""
+input candles720_var_samp_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"order by variance() on columns of table \"candles720\""
+input candles720_variance_order_by {
+    close: order_by
+    high: order_by
+    low: order_by
+    open: order_by
+    time: order_by
+    volume: order_by
+}
+
+"expression to compare columns of type json. All fields are combined with logical 'AND'."
+input json_comparison_exp {
+    _eq: json
+    _gt: json
+    _gte: json
+    _in: [json!]
+    _is_null: Boolean
+    _lt: json
+    _lte: json
+    _neq: json
+    _nin: [json!]
+}
+
+"expression to compare columns of type jsonb. All fields are combined with logical 'AND'."
+input jsonb_comparison_exp {
+    "is the column contained in the given json value"
+    _contained_in: jsonb
+    "does the column contain the given json value at the top level"
+    _contains: jsonb
+    _eq: jsonb
+    _gt: jsonb
+    _gte: jsonb
+    "does the string exist as a top-level key in the column"
+    _has_key: String
+    "do all of these strings exist as top-level keys in the column"
+    _has_keys_all: [String!]
+    "do any of these strings exist as top-level keys in the column"
+    _has_keys_any: [String!]
+    _in: [jsonb!]
+    _is_null: Boolean
+    _lt: jsonb
+    _lte: jsonb
+    _neq: jsonb
+    _nin: [jsonb!]
+}
+
+"expression to compare columns of type numeric. All fields are combined with logical 'AND'."
+input numeric_comparison_exp {
+    _eq: numeric
+    _gt: numeric
+    _gte: numeric
+    _in: [numeric!]
+    _is_null: Boolean
+    _lt: numeric
+    _lte: numeric
+    _neq: numeric
+    _nin: [numeric!]
+}
+
+"Boolean expression to filter rows from the table \"robot_stats\". All fields are combined with a logical 'AND'."
+input robot_stats_bool_exp {
+    _and: [robot_stats_bool_exp]
+    _not: robot_stats_bool_exp
+    _or: [robot_stats_bool_exp]
+    equity: jsonb_comparison_exp
+    equity_avg: jsonb_comparison_exp
+    last_position_exit_date: timestamp_comparison_exp
+    last_updated_at: timestamp_comparison_exp
+    robot: robots_bool_exp
+    robot_id: uuid_comparison_exp
+    statistics: jsonb_comparison_exp
+}
+
+"ordering options when selecting data from \"robot_stats\""
+input robot_stats_order_by {
+    equity: order_by
+    equity_avg: order_by
+    last_position_exit_date: order_by
+    last_updated_at: order_by
+    robot: robots_order_by
+    robot_id: order_by
+    statistics: order_by
+}
+
+"primary key columns input for table: \"robot_stats\""
+input robot_stats_pk_columns_input {
+    robot_id: uuid!
+}
+
+"order by aggregate values of table \"robots\""
+input robots_aggregate_order_by {
+    avg: robots_avg_order_by
+    count: order_by
+    max: robots_max_order_by
+    min: robots_min_order_by
+    stddev: robots_stddev_order_by
+    stddev_pop: robots_stddev_pop_order_by
+    stddev_samp: robots_stddev_samp_order_by
+    sum: robots_sum_order_by
+    var_pop: robots_var_pop_order_by
+    var_samp: robots_var_samp_order_by
+    variance: robots_variance_order_by
+}
+
+"order by avg() on columns of table \"robots\""
+input robots_avg_order_by {
+    available: order_by
+    timeframe: order_by
+}
+
+"Boolean expression to filter rows from the table \"robots\". All fields are combined with a logical 'AND'."
+input robots_bool_exp {
+    _and: [robots_bool_exp]
+    _not: robots_bool_exp
+    _or: [robots_bool_exp]
+    active_signals: v_robot_alerts_bool_exp
+    asset: String_comparison_exp
+    available: Int_comparison_exp
+    code: String_comparison_exp
+    currency: String_comparison_exp
+    exchange: String_comparison_exp
+    id: uuid_comparison_exp
+    mod: String_comparison_exp
+    name: String_comparison_exp
+    robot_positions: v_robot_positions_bool_exp
+    robot_settings: v_robot_settings_bool_exp
+    signals: Boolean_comparison_exp
+    started_at: timestamp_comparison_exp
+    stats: v_robot_stats_bool_exp
+    status: String_comparison_exp
+    stopped_at: timestamp_comparison_exp
+    strategyByStrategy: strategies_bool_exp
+    timeframe: Int_comparison_exp
+    trading: Boolean_comparison_exp
+}
+
+"order by max() on columns of table \"robots\""
+input robots_max_order_by {
+    asset: order_by
+    available: order_by
+    code: order_by
+    currency: order_by
+    exchange: order_by
+    id: order_by
+    mod: order_by
+    name: order_by
+    started_at: order_by
+    status: order_by
+    stopped_at: order_by
+    timeframe: order_by
+}
+
+"order by min() on columns of table \"robots\""
+input robots_min_order_by {
+    asset: order_by
+    available: order_by
+    code: order_by
+    currency: order_by
+    exchange: order_by
+    id: order_by
+    mod: order_by
+    name: order_by
+    started_at: order_by
+    status: order_by
+    stopped_at: order_by
+    timeframe: order_by
+}
+
+"ordering options when selecting data from \"robots\""
+input robots_order_by {
+    active_signals_aggregate: v_robot_alerts_aggregate_order_by
+    asset: order_by
+    available: order_by
+    code: order_by
+    currency: order_by
+    exchange: order_by
+    id: order_by
+    mod: order_by
+    name: order_by
+    robot_positions_aggregate: v_robot_positions_aggregate_order_by
+    robot_settings: v_robot_settings_order_by
+    signals: order_by
+    started_at: order_by
+    stats: v_robot_stats_order_by
+    status: order_by
+    stopped_at: order_by
+    strategyByStrategy: strategies_order_by
+    timeframe: order_by
+    trading: order_by
+}
+
+"primary key columns input for table: \"robots\""
+input robots_pk_columns_input {
+    id: uuid!
+}
+
+"order by stddev() on columns of table \"robots\""
+input robots_stddev_order_by {
+    available: order_by
+    timeframe: order_by
+}
+
+"order by stddev_pop() on columns of table \"robots\""
+input robots_stddev_pop_order_by {
+    available: order_by
+    timeframe: order_by
+}
+
+"order by stddev_samp() on columns of table \"robots\""
+input robots_stddev_samp_order_by {
+    available: order_by
+    timeframe: order_by
+}
+
+"order by sum() on columns of table \"robots\""
+input robots_sum_order_by {
+    available: order_by
+    timeframe: order_by
+}
+
+"order by var_pop() on columns of table \"robots\""
+input robots_var_pop_order_by {
+    available: order_by
+    timeframe: order_by
+}
+
+"order by var_samp() on columns of table \"robots\""
+input robots_var_samp_order_by {
+    available: order_by
+    timeframe: order_by
+}
+
+"order by variance() on columns of table \"robots\""
+input robots_variance_order_by {
+    available: order_by
+    timeframe: order_by
+}
+
+"Boolean expression to filter rows from the table \"strategies\". All fields are combined with a logical 'AND'."
+input strategies_bool_exp {
+    _and: [strategies_bool_exp]
+    _not: strategies_bool_exp
+    _or: [strategies_bool_exp]
+    description: String_comparison_exp
+    id: String_comparison_exp
+    name: String_comparison_exp
+    robots: robots_bool_exp
+}
+
+"ordering options when selecting data from \"strategies\""
+input strategies_order_by {
+    description: order_by
+    id: order_by
+    name: order_by
+    robots_aggregate: robots_aggregate_order_by
+}
+
+"primary key columns input for table: \"strategies\""
+input strategies_pk_columns_input {
+    id: String!
+}
+
+"expression to compare columns of type timestamp. All fields are combined with logical 'AND'."
+input timestamp_comparison_exp {
+    _eq: timestamp
+    _gt: timestamp
+    _gte: timestamp
+    _in: [timestamp!]
+    _is_null: Boolean
+    _lt: timestamp
+    _lte: timestamp
+    _neq: timestamp
+    _nin: [timestamp!]
+}
+
+"expression to compare columns of type uuid. All fields are combined with logical 'AND'."
+input uuid_comparison_exp {
+    _eq: uuid
+    _gt: uuid
+    _gte: uuid
+    _in: [uuid!]
+    _is_null: Boolean
+    _lt: uuid
+    _lte: uuid
+    _neq: uuid
+    _nin: [uuid!]
+}
+
+"order by aggregate values of table \"v_candles120_positions\""
+input v_candles120_positions_aggregate_order_by {
+    count: order_by
+    max: v_candles120_positions_max_order_by
+    min: v_candles120_positions_min_order_by
+}
+
+"Boolean expression to filter rows from the table \"v_candles120_positions\". All fields are combined with a logical 'AND'."
+input v_candles120_positions_bool_exp {
+    _and: [v_candles120_positions_bool_exp]
+    _not: v_candles120_positions_bool_exp
+    _or: [v_candles120_positions_bool_exp]
+    candle: candles120_bool_exp
+    candle_id: uuid_comparison_exp
+    position_entry: json_comparison_exp
+    position_exit: json_comparison_exp
+    robot: robots_bool_exp
+    robot_id: uuid_comparison_exp
+}
+
+"order by max() on columns of table \"v_candles120_positions\""
+input v_candles120_positions_max_order_by {
+    candle_id: order_by
+    robot_id: order_by
+}
+
+"order by min() on columns of table \"v_candles120_positions\""
+input v_candles120_positions_min_order_by {
+    candle_id: order_by
+    robot_id: order_by
+}
+
+"ordering options when selecting data from \"v_candles120_positions\""
+input v_candles120_positions_order_by {
+    candle: candles120_order_by
+    candle_id: order_by
+    position_entry: order_by
+    position_exit: order_by
+    robot: robots_order_by
+    robot_id: order_by
+}
+
+"order by aggregate values of table \"v_candles1440_positions\""
+input v_candles1440_positions_aggregate_order_by {
+    count: order_by
+    max: v_candles1440_positions_max_order_by
+    min: v_candles1440_positions_min_order_by
+}
+
+"Boolean expression to filter rows from the table \"v_candles1440_positions\". All fields are combined with a logical 'AND'."
+input v_candles1440_positions_bool_exp {
+    _and: [v_candles1440_positions_bool_exp]
+    _not: v_candles1440_positions_bool_exp
+    _or: [v_candles1440_positions_bool_exp]
+    candle: candles1440_bool_exp
+    candle_id: uuid_comparison_exp
+    position_entry: json_comparison_exp
+    position_exit: json_comparison_exp
+    robot: robots_bool_exp
+    robot_id: uuid_comparison_exp
+}
+
+"order by max() on columns of table \"v_candles1440_positions\""
+input v_candles1440_positions_max_order_by {
+    candle_id: order_by
+    robot_id: order_by
+}
+
+"order by min() on columns of table \"v_candles1440_positions\""
+input v_candles1440_positions_min_order_by {
+    candle_id: order_by
+    robot_id: order_by
+}
+
+"ordering options when selecting data from \"v_candles1440_positions\""
+input v_candles1440_positions_order_by {
+    candle: candles1440_order_by
+    candle_id: order_by
+    position_entry: order_by
+    position_exit: order_by
+    robot: robots_order_by
+    robot_id: order_by
+}
+
+"order by aggregate values of table \"v_candles15_positions\""
+input v_candles15_positions_aggregate_order_by {
+    avg: v_candles15_positions_avg_order_by
+    count: order_by
+    max: v_candles15_positions_max_order_by
+    min: v_candles15_positions_min_order_by
+    stddev: v_candles15_positions_stddev_order_by
+    stddev_pop: v_candles15_positions_stddev_pop_order_by
+    stddev_samp: v_candles15_positions_stddev_samp_order_by
+    sum: v_candles15_positions_sum_order_by
+    var_pop: v_candles15_positions_var_pop_order_by
+    var_samp: v_candles15_positions_var_samp_order_by
+    variance: v_candles15_positions_variance_order_by
+}
+
+"order by avg() on columns of table \"v_candles15_positions\""
+input v_candles15_positions_avg_order_by {
+    available: order_by
+}
+
+"Boolean expression to filter rows from the table \"v_candles15_positions\". All fields are combined with a logical 'AND'."
+input v_candles15_positions_bool_exp {
+    _and: [v_candles15_positions_bool_exp]
+    _not: v_candles15_positions_bool_exp
+    _or: [v_candles15_positions_bool_exp]
+    available: Int_comparison_exp
+    candle: candles15_bool_exp
+    candle_id: uuid_comparison_exp
+    position_entry: json_comparison_exp
+    position_exit: json_comparison_exp
+    robot: robots_bool_exp
+    robot_id: uuid_comparison_exp
+}
+
+"order by max() on columns of table \"v_candles15_positions\""
+input v_candles15_positions_max_order_by {
+    available: order_by
+    candle_id: order_by
+    robot_id: order_by
+}
+
+"order by min() on columns of table \"v_candles15_positions\""
+input v_candles15_positions_min_order_by {
+    available: order_by
+    candle_id: order_by
+    robot_id: order_by
+}
+
+"ordering options when selecting data from \"v_candles15_positions\""
+input v_candles15_positions_order_by {
+    available: order_by
+    candle: candles15_order_by
+    candle_id: order_by
+    position_entry: order_by
+    position_exit: order_by
+    robot: robots_order_by
+    robot_id: order_by
+}
+
+"order by stddev() on columns of table \"v_candles15_positions\""
+input v_candles15_positions_stddev_order_by {
+    available: order_by
+}
+
+"order by stddev_pop() on columns of table \"v_candles15_positions\""
+input v_candles15_positions_stddev_pop_order_by {
+    available: order_by
+}
+
+"order by stddev_samp() on columns of table \"v_candles15_positions\""
+input v_candles15_positions_stddev_samp_order_by {
+    available: order_by
+}
+
+"order by sum() on columns of table \"v_candles15_positions\""
+input v_candles15_positions_sum_order_by {
+    available: order_by
+}
+
+"order by var_pop() on columns of table \"v_candles15_positions\""
+input v_candles15_positions_var_pop_order_by {
+    available: order_by
+}
+
+"order by var_samp() on columns of table \"v_candles15_positions\""
+input v_candles15_positions_var_samp_order_by {
+    available: order_by
+}
+
+"order by variance() on columns of table \"v_candles15_positions\""
+input v_candles15_positions_variance_order_by {
+    available: order_by
+}
+
+"order by aggregate values of table \"v_candles240_positions\""
+input v_candles240_positions_aggregate_order_by {
+    avg: v_candles240_positions_avg_order_by
+    count: order_by
+    max: v_candles240_positions_max_order_by
+    min: v_candles240_positions_min_order_by
+    stddev: v_candles240_positions_stddev_order_by
+    stddev_pop: v_candles240_positions_stddev_pop_order_by
+    stddev_samp: v_candles240_positions_stddev_samp_order_by
+    sum: v_candles240_positions_sum_order_by
+    var_pop: v_candles240_positions_var_pop_order_by
+    var_samp: v_candles240_positions_var_samp_order_by
+    variance: v_candles240_positions_variance_order_by
+}
+
+"order by avg() on columns of table \"v_candles240_positions\""
+input v_candles240_positions_avg_order_by {
+    available: order_by
+}
+
+"Boolean expression to filter rows from the table \"v_candles240_positions\". All fields are combined with a logical 'AND'."
+input v_candles240_positions_bool_exp {
+    _and: [v_candles240_positions_bool_exp]
+    _not: v_candles240_positions_bool_exp
+    _or: [v_candles240_positions_bool_exp]
+    available: Int_comparison_exp
+    candle: candles240_bool_exp
+    candle_id: uuid_comparison_exp
+    position_entry: json_comparison_exp
+    position_exit: json_comparison_exp
+    robot: robots_bool_exp
+    robot_id: uuid_comparison_exp
+}
+
+"order by max() on columns of table \"v_candles240_positions\""
+input v_candles240_positions_max_order_by {
+    available: order_by
+    candle_id: order_by
+    robot_id: order_by
+}
+
+"order by min() on columns of table \"v_candles240_positions\""
+input v_candles240_positions_min_order_by {
+    available: order_by
+    candle_id: order_by
+    robot_id: order_by
+}
+
+"ordering options when selecting data from \"v_candles240_positions\""
+input v_candles240_positions_order_by {
+    available: order_by
+    candle: candles240_order_by
+    candle_id: order_by
+    position_entry: order_by
+    position_exit: order_by
+    robot: robots_order_by
+    robot_id: order_by
+}
+
+"order by stddev() on columns of table \"v_candles240_positions\""
+input v_candles240_positions_stddev_order_by {
+    available: order_by
+}
+
+"order by stddev_pop() on columns of table \"v_candles240_positions\""
+input v_candles240_positions_stddev_pop_order_by {
+    available: order_by
+}
+
+"order by stddev_samp() on columns of table \"v_candles240_positions\""
+input v_candles240_positions_stddev_samp_order_by {
+    available: order_by
+}
+
+"order by sum() on columns of table \"v_candles240_positions\""
+input v_candles240_positions_sum_order_by {
+    available: order_by
+}
+
+"order by var_pop() on columns of table \"v_candles240_positions\""
+input v_candles240_positions_var_pop_order_by {
+    available: order_by
+}
+
+"order by var_samp() on columns of table \"v_candles240_positions\""
+input v_candles240_positions_var_samp_order_by {
+    available: order_by
+}
+
+"order by variance() on columns of table \"v_candles240_positions\""
+input v_candles240_positions_variance_order_by {
+    available: order_by
+}
+
+"order by aggregate values of table \"v_candles30_positions\""
+input v_candles30_positions_aggregate_order_by {
+    avg: v_candles30_positions_avg_order_by
+    count: order_by
+    max: v_candles30_positions_max_order_by
+    min: v_candles30_positions_min_order_by
+    stddev: v_candles30_positions_stddev_order_by
+    stddev_pop: v_candles30_positions_stddev_pop_order_by
+    stddev_samp: v_candles30_positions_stddev_samp_order_by
+    sum: v_candles30_positions_sum_order_by
+    var_pop: v_candles30_positions_var_pop_order_by
+    var_samp: v_candles30_positions_var_samp_order_by
+    variance: v_candles30_positions_variance_order_by
+}
+
+"order by avg() on columns of table \"v_candles30_positions\""
+input v_candles30_positions_avg_order_by {
+    available: order_by
+}
+
+"Boolean expression to filter rows from the table \"v_candles30_positions\". All fields are combined with a logical 'AND'."
+input v_candles30_positions_bool_exp {
+    _and: [v_candles30_positions_bool_exp]
+    _not: v_candles30_positions_bool_exp
+    _or: [v_candles30_positions_bool_exp]
+    available: Int_comparison_exp
+    candle: candles30_bool_exp
+    candle_id: uuid_comparison_exp
+    position_entry: json_comparison_exp
+    position_exit: json_comparison_exp
+    robot: robots_bool_exp
+    robot_id: uuid_comparison_exp
+}
+
+"order by max() on columns of table \"v_candles30_positions\""
+input v_candles30_positions_max_order_by {
+    available: order_by
+    candle_id: order_by
+    robot_id: order_by
+}
+
+"order by min() on columns of table \"v_candles30_positions\""
+input v_candles30_positions_min_order_by {
+    available: order_by
+    candle_id: order_by
+    robot_id: order_by
+}
+
+"ordering options when selecting data from \"v_candles30_positions\""
+input v_candles30_positions_order_by {
+    available: order_by
+    candle: candles30_order_by
+    candle_id: order_by
+    position_entry: order_by
+    position_exit: order_by
+    robot: robots_order_by
+    robot_id: order_by
+}
+
+"order by stddev() on columns of table \"v_candles30_positions\""
+input v_candles30_positions_stddev_order_by {
+    available: order_by
+}
+
+"order by stddev_pop() on columns of table \"v_candles30_positions\""
+input v_candles30_positions_stddev_pop_order_by {
+    available: order_by
+}
+
+"order by stddev_samp() on columns of table \"v_candles30_positions\""
+input v_candles30_positions_stddev_samp_order_by {
+    available: order_by
+}
+
+"order by sum() on columns of table \"v_candles30_positions\""
+input v_candles30_positions_sum_order_by {
+    available: order_by
+}
+
+"order by var_pop() on columns of table \"v_candles30_positions\""
+input v_candles30_positions_var_pop_order_by {
+    available: order_by
+}
+
+"order by var_samp() on columns of table \"v_candles30_positions\""
+input v_candles30_positions_var_samp_order_by {
+    available: order_by
+}
+
+"order by variance() on columns of table \"v_candles30_positions\""
+input v_candles30_positions_variance_order_by {
+    available: order_by
+}
+
+"order by aggregate values of table \"v_candles480_positions\""
+input v_candles480_positions_aggregate_order_by {
+    avg: v_candles480_positions_avg_order_by
+    count: order_by
+    max: v_candles480_positions_max_order_by
+    min: v_candles480_positions_min_order_by
+    stddev: v_candles480_positions_stddev_order_by
+    stddev_pop: v_candles480_positions_stddev_pop_order_by
+    stddev_samp: v_candles480_positions_stddev_samp_order_by
+    sum: v_candles480_positions_sum_order_by
+    var_pop: v_candles480_positions_var_pop_order_by
+    var_samp: v_candles480_positions_var_samp_order_by
+    variance: v_candles480_positions_variance_order_by
+}
+
+"order by avg() on columns of table \"v_candles480_positions\""
+input v_candles480_positions_avg_order_by {
+    available: order_by
+}
+
+"Boolean expression to filter rows from the table \"v_candles480_positions\". All fields are combined with a logical 'AND'."
+input v_candles480_positions_bool_exp {
+    _and: [v_candles480_positions_bool_exp]
+    _not: v_candles480_positions_bool_exp
+    _or: [v_candles480_positions_bool_exp]
+    available: Int_comparison_exp
+    candle: candles480_bool_exp
+    candle_id: uuid_comparison_exp
+    position_entry: json_comparison_exp
+    position_exit: json_comparison_exp
+    robot: robots_bool_exp
+    robot_id: uuid_comparison_exp
+}
+
+"order by max() on columns of table \"v_candles480_positions\""
+input v_candles480_positions_max_order_by {
+    available: order_by
+    candle_id: order_by
+    robot_id: order_by
+}
+
+"order by min() on columns of table \"v_candles480_positions\""
+input v_candles480_positions_min_order_by {
+    available: order_by
+    candle_id: order_by
+    robot_id: order_by
+}
+
+"ordering options when selecting data from \"v_candles480_positions\""
+input v_candles480_positions_order_by {
+    available: order_by
+    candle: candles480_order_by
+    candle_id: order_by
+    position_entry: order_by
+    position_exit: order_by
+    robot: robots_order_by
+    robot_id: order_by
+}
+
+"order by stddev() on columns of table \"v_candles480_positions\""
+input v_candles480_positions_stddev_order_by {
+    available: order_by
+}
+
+"order by stddev_pop() on columns of table \"v_candles480_positions\""
+input v_candles480_positions_stddev_pop_order_by {
+    available: order_by
+}
+
+"order by stddev_samp() on columns of table \"v_candles480_positions\""
+input v_candles480_positions_stddev_samp_order_by {
+    available: order_by
+}
+
+"order by sum() on columns of table \"v_candles480_positions\""
+input v_candles480_positions_sum_order_by {
+    available: order_by
+}
+
+"order by var_pop() on columns of table \"v_candles480_positions\""
+input v_candles480_positions_var_pop_order_by {
+    available: order_by
+}
+
+"order by var_samp() on columns of table \"v_candles480_positions\""
+input v_candles480_positions_var_samp_order_by {
+    available: order_by
+}
+
+"order by variance() on columns of table \"v_candles480_positions\""
+input v_candles480_positions_variance_order_by {
+    available: order_by
+}
+
+"order by aggregate values of table \"v_candles5_positions\""
+input v_candles5_positions_aggregate_order_by {
+    count: order_by
+    max: v_candles5_positions_max_order_by
+    min: v_candles5_positions_min_order_by
+}
+
+"Boolean expression to filter rows from the table \"v_candles5_positions\". All fields are combined with a logical 'AND'."
+input v_candles5_positions_bool_exp {
+    _and: [v_candles5_positions_bool_exp]
+    _not: v_candles5_positions_bool_exp
+    _or: [v_candles5_positions_bool_exp]
+    candle: candles5_bool_exp
+    candle_id: uuid_comparison_exp
+    position_entry: json_comparison_exp
+    position_exit: json_comparison_exp
+    robot: robots_bool_exp
+    robot_id: uuid_comparison_exp
+}
+
+"order by max() on columns of table \"v_candles5_positions\""
+input v_candles5_positions_max_order_by {
+    candle_id: order_by
+    robot_id: order_by
+}
+
+"order by min() on columns of table \"v_candles5_positions\""
+input v_candles5_positions_min_order_by {
+    candle_id: order_by
+    robot_id: order_by
+}
+
+"ordering options when selecting data from \"v_candles5_positions\""
+input v_candles5_positions_order_by {
+    candle: candles5_order_by
+    candle_id: order_by
+    position_entry: order_by
+    position_exit: order_by
+    robot: robots_order_by
+    robot_id: order_by
+}
+
+"order by aggregate values of table \"v_candles60_positions\""
+input v_candles60_positions_aggregate_order_by {
+    avg: v_candles60_positions_avg_order_by
+    count: order_by
+    max: v_candles60_positions_max_order_by
+    min: v_candles60_positions_min_order_by
+    stddev: v_candles60_positions_stddev_order_by
+    stddev_pop: v_candles60_positions_stddev_pop_order_by
+    stddev_samp: v_candles60_positions_stddev_samp_order_by
+    sum: v_candles60_positions_sum_order_by
+    var_pop: v_candles60_positions_var_pop_order_by
+    var_samp: v_candles60_positions_var_samp_order_by
+    variance: v_candles60_positions_variance_order_by
+}
+
+"order by avg() on columns of table \"v_candles60_positions\""
+input v_candles60_positions_avg_order_by {
+    available: order_by
+}
+
+"Boolean expression to filter rows from the table \"v_candles60_positions\". All fields are combined with a logical 'AND'."
+input v_candles60_positions_bool_exp {
+    _and: [v_candles60_positions_bool_exp]
+    _not: v_candles60_positions_bool_exp
+    _or: [v_candles60_positions_bool_exp]
+    available: Int_comparison_exp
+    candle: candles60_bool_exp
+    candle_id: uuid_comparison_exp
+    position_entry: json_comparison_exp
+    position_exit: json_comparison_exp
+    robot: robots_bool_exp
+    robot_id: uuid_comparison_exp
+}
+
+"order by max() on columns of table \"v_candles60_positions\""
+input v_candles60_positions_max_order_by {
+    available: order_by
+    candle_id: order_by
+    robot_id: order_by
+}
+
+"order by min() on columns of table \"v_candles60_positions\""
+input v_candles60_positions_min_order_by {
+    available: order_by
+    candle_id: order_by
+    robot_id: order_by
+}
+
+"ordering options when selecting data from \"v_candles60_positions\""
+input v_candles60_positions_order_by {
+    available: order_by
+    candle: candles60_order_by
+    candle_id: order_by
+    position_entry: order_by
+    position_exit: order_by
+    robot: robots_order_by
+    robot_id: order_by
+}
+
+"order by stddev() on columns of table \"v_candles60_positions\""
+input v_candles60_positions_stddev_order_by {
+    available: order_by
+}
+
+"order by stddev_pop() on columns of table \"v_candles60_positions\""
+input v_candles60_positions_stddev_pop_order_by {
+    available: order_by
+}
+
+"order by stddev_samp() on columns of table \"v_candles60_positions\""
+input v_candles60_positions_stddev_samp_order_by {
+    available: order_by
+}
+
+"order by sum() on columns of table \"v_candles60_positions\""
+input v_candles60_positions_sum_order_by {
+    available: order_by
+}
+
+"order by var_pop() on columns of table \"v_candles60_positions\""
+input v_candles60_positions_var_pop_order_by {
+    available: order_by
+}
+
+"order by var_samp() on columns of table \"v_candles60_positions\""
+input v_candles60_positions_var_samp_order_by {
+    available: order_by
+}
+
+"order by variance() on columns of table \"v_candles60_positions\""
+input v_candles60_positions_variance_order_by {
+    available: order_by
+}
+
+"order by aggregate values of table \"v_candles720_positions\""
+input v_candles720_positions_aggregate_order_by {
+    avg: v_candles720_positions_avg_order_by
+    count: order_by
+    max: v_candles720_positions_max_order_by
+    min: v_candles720_positions_min_order_by
+    stddev: v_candles720_positions_stddev_order_by
+    stddev_pop: v_candles720_positions_stddev_pop_order_by
+    stddev_samp: v_candles720_positions_stddev_samp_order_by
+    sum: v_candles720_positions_sum_order_by
+    var_pop: v_candles720_positions_var_pop_order_by
+    var_samp: v_candles720_positions_var_samp_order_by
+    variance: v_candles720_positions_variance_order_by
+}
+
+"order by avg() on columns of table \"v_candles720_positions\""
+input v_candles720_positions_avg_order_by {
+    available: order_by
+}
+
+"Boolean expression to filter rows from the table \"v_candles720_positions\". All fields are combined with a logical 'AND'."
+input v_candles720_positions_bool_exp {
+    _and: [v_candles720_positions_bool_exp]
+    _not: v_candles720_positions_bool_exp
+    _or: [v_candles720_positions_bool_exp]
+    available: Int_comparison_exp
+    candle: candles720_bool_exp
+    candle_id: uuid_comparison_exp
+    position_entry: json_comparison_exp
+    position_exit: json_comparison_exp
+    robot: robots_bool_exp
+    robot_id: uuid_comparison_exp
+}
+
+"order by max() on columns of table \"v_candles720_positions\""
+input v_candles720_positions_max_order_by {
+    available: order_by
+    candle_id: order_by
+    robot_id: order_by
+}
+
+"order by min() on columns of table \"v_candles720_positions\""
+input v_candles720_positions_min_order_by {
+    available: order_by
+    candle_id: order_by
+    robot_id: order_by
+}
+
+"ordering options when selecting data from \"v_candles720_positions\""
+input v_candles720_positions_order_by {
+    available: order_by
+    candle: candles720_order_by
+    candle_id: order_by
+    position_entry: order_by
+    position_exit: order_by
+    robot: robots_order_by
+    robot_id: order_by
+}
+
+"order by stddev() on columns of table \"v_candles720_positions\""
+input v_candles720_positions_stddev_order_by {
+    available: order_by
+}
+
+"order by stddev_pop() on columns of table \"v_candles720_positions\""
+input v_candles720_positions_stddev_pop_order_by {
+    available: order_by
+}
+
+"order by stddev_samp() on columns of table \"v_candles720_positions\""
+input v_candles720_positions_stddev_samp_order_by {
+    available: order_by
+}
+
+"order by sum() on columns of table \"v_candles720_positions\""
+input v_candles720_positions_sum_order_by {
+    available: order_by
+}
+
+"order by var_pop() on columns of table \"v_candles720_positions\""
+input v_candles720_positions_var_pop_order_by {
+    available: order_by
+}
+
+"order by var_samp() on columns of table \"v_candles720_positions\""
+input v_candles720_positions_var_samp_order_by {
+    available: order_by
+}
+
+"order by variance() on columns of table \"v_candles720_positions\""
+input v_candles720_positions_variance_order_by {
+    available: order_by
+}
+
+"order by aggregate values of table \"v_robot_alerts\""
+input v_robot_alerts_aggregate_order_by {
+    avg: v_robot_alerts_avg_order_by
+    count: order_by
+    max: v_robot_alerts_max_order_by
+    min: v_robot_alerts_min_order_by
+    stddev: v_robot_alerts_stddev_order_by
+    stddev_pop: v_robot_alerts_stddev_pop_order_by
+    stddev_samp: v_robot_alerts_stddev_samp_order_by
+    sum: v_robot_alerts_sum_order_by
+    var_pop: v_robot_alerts_var_pop_order_by
+    var_samp: v_robot_alerts_var_samp_order_by
+    variance: v_robot_alerts_variance_order_by
+}
+
+"order by avg() on columns of table \"v_robot_alerts\""
+input v_robot_alerts_avg_order_by {
+    price: order_by
+    volume: order_by
+}
+
+"Boolean expression to filter rows from the table \"v_robot_alerts\". All fields are combined with a logical 'AND'."
+input v_robot_alerts_bool_exp {
+    _and: [v_robot_alerts_bool_exp]
+    _not: v_robot_alerts_bool_exp
+    _or: [v_robot_alerts_bool_exp]
+    action: String_comparison_exp
+    alert_priority: String_comparison_exp
+    candle_timestamp: timestamp_comparison_exp
+    order_type: String_comparison_exp
+    position_code: String_comparison_exp
+    position_id: uuid_comparison_exp
+    price: numeric_comparison_exp
+    robot: robots_bool_exp
+    robot_id: uuid_comparison_exp
+    timestamp: timestamp_comparison_exp
+    volume: numeric_comparison_exp
+}
+
+"order by max() on columns of table \"v_robot_alerts\""
+input v_robot_alerts_max_order_by {
+    action: order_by
+    alert_priority: order_by
+    candle_timestamp: order_by
+    order_type: order_by
+    position_code: order_by
+    position_id: order_by
+    price: order_by
+    robot_id: order_by
+    timestamp: order_by
+    volume: order_by
+}
+
+"order by min() on columns of table \"v_robot_alerts\""
+input v_robot_alerts_min_order_by {
+    action: order_by
+    alert_priority: order_by
+    candle_timestamp: order_by
+    order_type: order_by
+    position_code: order_by
+    position_id: order_by
+    price: order_by
+    robot_id: order_by
+    timestamp: order_by
+    volume: order_by
+}
+
+"ordering options when selecting data from \"v_robot_alerts\""
+input v_robot_alerts_order_by {
+    action: order_by
+    alert_priority: order_by
+    candle_timestamp: order_by
+    order_type: order_by
+    position_code: order_by
+    position_id: order_by
+    price: order_by
+    robot: robots_order_by
+    robot_id: order_by
+    timestamp: order_by
+    volume: order_by
+}
+
+"order by stddev() on columns of table \"v_robot_alerts\""
+input v_robot_alerts_stddev_order_by {
+    price: order_by
+    volume: order_by
+}
+
+"order by stddev_pop() on columns of table \"v_robot_alerts\""
+input v_robot_alerts_stddev_pop_order_by {
+    price: order_by
+    volume: order_by
+}
+
+"order by stddev_samp() on columns of table \"v_robot_alerts\""
+input v_robot_alerts_stddev_samp_order_by {
+    price: order_by
+    volume: order_by
+}
+
+"order by sum() on columns of table \"v_robot_alerts\""
+input v_robot_alerts_sum_order_by {
+    price: order_by
+    volume: order_by
+}
+
+"order by var_pop() on columns of table \"v_robot_alerts\""
+input v_robot_alerts_var_pop_order_by {
+    price: order_by
+    volume: order_by
+}
+
+"order by var_samp() on columns of table \"v_robot_alerts\""
+input v_robot_alerts_var_samp_order_by {
+    price: order_by
+    volume: order_by
+}
+
+"order by variance() on columns of table \"v_robot_alerts\""
+input v_robot_alerts_variance_order_by {
+    price: order_by
+    volume: order_by
+}
+
+"order by aggregate values of table \"v_robot_positions\""
+input v_robot_positions_aggregate_order_by {
+    avg: v_robot_positions_avg_order_by
+    count: order_by
+    max: v_robot_positions_max_order_by
+    min: v_robot_positions_min_order_by
+    stddev: v_robot_positions_stddev_order_by
+    stddev_pop: v_robot_positions_stddev_pop_order_by
+    stddev_samp: v_robot_positions_stddev_samp_order_by
+    sum: v_robot_positions_sum_order_by
+    var_pop: v_robot_positions_var_pop_order_by
+    var_samp: v_robot_positions_var_samp_order_by
+    variance: v_robot_positions_variance_order_by
+}
+
+"order by avg() on columns of table \"v_robot_positions\""
+input v_robot_positions_avg_order_by {
+    bars_held: order_by
+    entry_price: order_by
+    exit_price: order_by
+    fee: order_by
+    profit: order_by
+    volume: order_by
+}
+
+"Boolean expression to filter rows from the table \"v_robot_positions\". All fields are combined with a logical 'AND'."
+input v_robot_positions_bool_exp {
+    _and: [v_robot_positions_bool_exp]
+    _not: v_robot_positions_bool_exp
+    _or: [v_robot_positions_bool_exp]
+    alerts: jsonb_comparison_exp
+    bars_held: Int_comparison_exp
+    code: String_comparison_exp
+    direction: String_comparison_exp
+    entry_action: String_comparison_exp
+    entry_candle_timestamp: timestamp_comparison_exp
+    entry_date: timestamp_comparison_exp
+    entry_order_type: String_comparison_exp
+    entry_price: numeric_comparison_exp
+    entry_status: String_comparison_exp
+    exit_action: String_comparison_exp
+    exit_candle_timestamp: timestamp_comparison_exp
+    exit_date: timestamp_comparison_exp
+    exit_order_type: String_comparison_exp
+    exit_price: numeric_comparison_exp
+    exit_status: String_comparison_exp
+    fee: numeric_comparison_exp
+    id: uuid_comparison_exp
+    parent_id: uuid_comparison_exp
+    prefix: String_comparison_exp
+    profit: numeric_comparison_exp
+    robot: robots_bool_exp
+    robot_id: uuid_comparison_exp
+    status: String_comparison_exp
+    volume: numeric_comparison_exp
+}
+
+"order by max() on columns of table \"v_robot_positions\""
+input v_robot_positions_max_order_by {
+    bars_held: order_by
+    code: order_by
+    direction: order_by
+    entry_action: order_by
+    entry_candle_timestamp: order_by
+    entry_date: order_by
+    entry_order_type: order_by
+    entry_price: order_by
+    entry_status: order_by
+    exit_action: order_by
+    exit_candle_timestamp: order_by
+    exit_date: order_by
+    exit_order_type: order_by
+    exit_price: order_by
+    exit_status: order_by
+    fee: order_by
+    id: order_by
+    parent_id: order_by
+    prefix: order_by
+    profit: order_by
+    robot_id: order_by
+    status: order_by
+    volume: order_by
+}
+
+"order by min() on columns of table \"v_robot_positions\""
+input v_robot_positions_min_order_by {
+    bars_held: order_by
+    code: order_by
+    direction: order_by
+    entry_action: order_by
+    entry_candle_timestamp: order_by
+    entry_date: order_by
+    entry_order_type: order_by
+    entry_price: order_by
+    entry_status: order_by
+    exit_action: order_by
+    exit_candle_timestamp: order_by
+    exit_date: order_by
+    exit_order_type: order_by
+    exit_price: order_by
+    exit_status: order_by
+    fee: order_by
+    id: order_by
+    parent_id: order_by
+    prefix: order_by
+    profit: order_by
+    robot_id: order_by
+    status: order_by
+    volume: order_by
+}
+
+"ordering options when selecting data from \"v_robot_positions\""
+input v_robot_positions_order_by {
+    alerts: order_by
+    bars_held: order_by
+    code: order_by
+    direction: order_by
+    entry_action: order_by
+    entry_candle_timestamp: order_by
+    entry_date: order_by
+    entry_order_type: order_by
+    entry_price: order_by
+    entry_status: order_by
+    exit_action: order_by
+    exit_candle_timestamp: order_by
+    exit_date: order_by
+    exit_order_type: order_by
+    exit_price: order_by
+    exit_status: order_by
+    fee: order_by
+    id: order_by
+    parent_id: order_by
+    prefix: order_by
+    profit: order_by
+    robot: robots_order_by
+    robot_id: order_by
+    status: order_by
+    volume: order_by
+}
+
+"order by stddev() on columns of table \"v_robot_positions\""
+input v_robot_positions_stddev_order_by {
+    bars_held: order_by
+    entry_price: order_by
+    exit_price: order_by
+    fee: order_by
+    profit: order_by
+    volume: order_by
+}
+
+"order by stddev_pop() on columns of table \"v_robot_positions\""
+input v_robot_positions_stddev_pop_order_by {
+    bars_held: order_by
+    entry_price: order_by
+    exit_price: order_by
+    fee: order_by
+    profit: order_by
+    volume: order_by
+}
+
+"order by stddev_samp() on columns of table \"v_robot_positions\""
+input v_robot_positions_stddev_samp_order_by {
+    bars_held: order_by
+    entry_price: order_by
+    exit_price: order_by
+    fee: order_by
+    profit: order_by
+    volume: order_by
+}
+
+"order by sum() on columns of table \"v_robot_positions\""
+input v_robot_positions_sum_order_by {
+    bars_held: order_by
+    entry_price: order_by
+    exit_price: order_by
+    fee: order_by
+    profit: order_by
+    volume: order_by
+}
+
+"order by var_pop() on columns of table \"v_robot_positions\""
+input v_robot_positions_var_pop_order_by {
+    bars_held: order_by
+    entry_price: order_by
+    exit_price: order_by
+    fee: order_by
+    profit: order_by
+    volume: order_by
+}
+
+"order by var_samp() on columns of table \"v_robot_positions\""
+input v_robot_positions_var_samp_order_by {
+    bars_held: order_by
+    entry_price: order_by
+    exit_price: order_by
+    fee: order_by
+    profit: order_by
+    volume: order_by
+}
+
+"order by variance() on columns of table \"v_robot_positions\""
+input v_robot_positions_variance_order_by {
+    bars_held: order_by
+    entry_price: order_by
+    exit_price: order_by
+    fee: order_by
+    profit: order_by
+    volume: order_by
+}
+
+"Boolean expression to filter rows from the table \"v_robot_settings\". All fields are combined with a logical 'AND'."
+input v_robot_settings_bool_exp {
+    _and: [v_robot_settings_bool_exp]
+    _not: v_robot_settings_bool_exp
+    _or: [v_robot_settings_bool_exp]
+    robot: robots_bool_exp
+    robot_id: uuid_comparison_exp
+    robot_settings: jsonb_comparison_exp
+}
+
+"ordering options when selecting data from \"v_robot_settings\""
+input v_robot_settings_order_by {
+    robot: robots_order_by
+    robot_id: order_by
+    robot_settings: order_by
+}
+
+"Boolean expression to filter rows from the table \"v_robot_stats\". All fields are combined with a logical 'AND'."
+input v_robot_stats_bool_exp {
+    _and: [v_robot_stats_bool_exp]
+    _not: v_robot_stats_bool_exp
+    _or: [v_robot_stats_bool_exp]
+    avg_bars_held: numeric_comparison_exp
+    avg_bars_held_losing: numeric_comparison_exp
+    avg_bars_held_winning: numeric_comparison_exp
+    avg_loss: numeric_comparison_exp
+    avg_net_profit: numeric_comparison_exp
+    avg_profit: numeric_comparison_exp
+    avg_profit_winners: numeric_comparison_exp
+    current_loss_sequence: numeric_comparison_exp
+    current_win_sequence: numeric_comparison_exp
+    equity: jsonb_comparison_exp
+    equity_avg: jsonb_comparison_exp
+    full_stats: jsonb_comparison_exp
+    gross_loss: numeric_comparison_exp
+    gross_profit: numeric_comparison_exp
+    last_updated_at: timestamp_comparison_exp
+    local_max: numeric_comparison_exp
+    loss_rate: numeric_comparison_exp
+    max_consec_losses: numeric_comparison_exp
+    max_consec_wins: numeric_comparison_exp
+    max_drawdown: numeric_comparison_exp
+    max_drawdown_date: timestamp_comparison_exp
+    net_profit: numeric_comparison_exp
+    payoff_ratio: numeric_comparison_exp
+    profit_factor: numeric_comparison_exp
+    rating: numeric_comparison_exp
+    recovery_factor: numeric_comparison_exp
+    robot: robots_bool_exp
+    robot_id: uuid_comparison_exp
+    trades_count: numeric_comparison_exp
+    trades_losing: numeric_comparison_exp
+    trades_winning: numeric_comparison_exp
+    win_rate: numeric_comparison_exp
+}
+
+"ordering options when selecting data from \"v_robot_stats\""
+input v_robot_stats_order_by {
+    avg_bars_held: order_by
+    avg_bars_held_losing: order_by
+    avg_bars_held_winning: order_by
+    avg_loss: order_by
+    avg_net_profit: order_by
+    avg_profit: order_by
+    avg_profit_winners: order_by
+    current_loss_sequence: order_by
+    current_win_sequence: order_by
+    equity: order_by
+    equity_avg: order_by
+    full_stats: order_by
+    gross_loss: order_by
+    gross_profit: order_by
+    last_updated_at: order_by
+    local_max: order_by
+    loss_rate: order_by
+    max_consec_losses: order_by
+    max_consec_wins: order_by
+    max_drawdown: order_by
+    max_drawdown_date: order_by
+    net_profit: order_by
+    payoff_ratio: order_by
+    profit_factor: order_by
+    rating: order_by
+    recovery_factor: order_by
+    robot: robots_order_by
+    robot_id: order_by
+    trades_count: order_by
+    trades_losing: order_by
+    trades_winning: order_by
+    win_rate: order_by
+}
+
+
+scalar bigint
+
+scalar json
+
+scalar jsonb
+
+scalar numeric
+
+scalar timestamp
+
+scalar timestamptz
+
+scalar uuid

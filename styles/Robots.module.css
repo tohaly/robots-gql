@@ -1,0 +1,66 @@
+@keyframes spinRobot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.list {
+    padding: 0 16px;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-gap: 16px;
+    margin-bottom: 32px;
+}
+
+.button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: #0070f3;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform .4s;
+    position: relative;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button:disabled {
+    background-color: #ccc;
+    cursor: default;
+    transform: none;
+}
+
+.button:after{
+    position: absolute;
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Ccircle cx='16.047' cy='7.846' r='.963'/%3E%3Cpath d='M14.608 25.559h2.201v.846h-2.201zM14.608 26.846h2.201v.846h-2.201zM14.608 27.994h2.201v.846h-2.201zM16.81 29.943v-.661h-2.201v.661A2.334 2.334 0 0013.378 32h4.665a2.34 2.34 0 00-1.233-2.057zM19.657 25.559h2.201v.846h-2.201zM19.657 26.846h2.201v.846h-2.201zM19.657 27.994h2.201v.846h-2.201zM21.858 29.943v-.661h-2.201v.661A2.335 2.335 0 0018.425 32h4.664a2.327 2.327 0 00-1.231-2.057z'/%3E%3Ccircle cx='20.353' cy='7.846' r='.963'/%3E%3Cpath d='M27.97 21.963l.004-.001-4.129-8.167-.002.001v-.001h-3.209v-2.031h2.235V5.19h-2.708V3.836h-1.792V1.001h.367V0h-1.073v1.001h.367v2.835h-1.791V5.19h-2.708v6.573h2.236v2.031h-3.238l-2.462 3.034-4.365-3.954v-1.605h-.88v2.251H2.571v.88h1.792l5.927 5.37 2.24-2.746v6.617h2.031v1.522h2.199v-1.522h2.851v1.522h2.2v-1.522h2.031V18.29l2.179 4.31-.695 1.648.812.342.875-2.074 2.074.875.342-.812-1.459-.616zM21.99 7.846a1.637 1.637 0 11-3.275 0 1.637 1.637 0 013.275 0zm-7.58 0a1.637 1.637 0 113.274 0 1.637 1.637 0 01-3.274 0zm4.728 13.579h-4.895v-1.301h4.895v1.301zm0-2.059h-4.895v-1.302h4.895v1.302zm0-2.098h-4.895v-1.301h4.895v1.301zM18.2 10.79h-1.834v-.649h3.667v.649H18.2zm4.028 10.635h-2.356v-1.301h2.356v1.301zm0-2.059h-2.356v-1.302h2.356v1.302zm0-2.098h-2.356v-1.301h2.356v1.301z'/%3E%3C/svg%3E");
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    right: 20px;
+    top: 10px;
+}
+
+.buttonLoading:after {
+    animation: spinRobot 1s infinite linear;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.title{
+    text-align: center;
+}
